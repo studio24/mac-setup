@@ -57,7 +57,7 @@ ssh -T git@bitbucket.org
 
 Add your SSH key to [Studio 24 dev SSH keys repo](https://bitbucket.org/studio24/ssh-keys). This will give you permission to deploy websites.
 
-**Important note:** always use SSH when cloning a git repo, don’t use HTTPS (this ensures you authenticate via SSH). 
+**Important note:** always use SSH (secure shell) when cloning a git repo, not HTTPS.
 
 ### Install global .gitignore file
 
@@ -107,8 +107,6 @@ brew install wget
 brew install node
 brew install nvm
 brew install python
-brew install php
-brew install brew-php-switcher
 brew install composer
 brew install wp-cli
 ```
@@ -117,5 +115,3 @@ This installs the following extra CLI commands
 
 * `mate` CLI command to open text files in Textmate
 * `python3` and `pip3` for Python 3
-* `brew-php-switcher` to help switch PHP versions on the CLI, see https://github.com/philcook/php-switcher
-
