@@ -2,6 +2,8 @@
 
 Standard Mac setup for developers at Studio 24.
 
+_Note: this is a work-in-progress and Alan will likely move this into the Mac Setup / Addigy._
+
 ## Terminal
 
 Update shell (Catalina and above).
