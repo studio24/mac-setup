@@ -100,10 +100,11 @@ Install following packages via Homebrew
 
 ```bash
 brew cask install iterm2
-brew cask install sequel-pro
 brew cask install phpstorm
 brew cask install transmit
 brew cask install textmate
+brew cask install github
+brew cask install tableplus
 
 brew install wget
 brew install node
