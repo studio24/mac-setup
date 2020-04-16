@@ -118,3 +118,17 @@ This installs the following extra CLI commands
 
 * `mate` CLI command to open text files in Textmate
 * `python3` and `pip3` for Python 3
+
+### NVM setup
+
+```
+mkdir ~/.nvm
+```
+
+Edit `~/.zshrc` and add:
+
+```
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+```
