@@ -4,6 +4,31 @@ Standard Mac setup for developers at Studio 24.
 
 _Note: this is a work-in-progress and Alan will likely move this into the Mac Setup / Addigy._
 
+## Old text from handbook
+
+See https://github.com/studio24/dev-mac-setup/
+
+* [iTerm2](http://iterm2.com) - Terminal replacement
+* [Sequel Pro](http://www.sequelpro.com/download) - MySQL management tool
+* [SourceTree](http://www.sourcetreeapp.com/download/)
+
+Install via App Store:
+
+* [Microsoft Remote Desktop](https://itunes.apple.com/gb/app/microsoft-remote-desktop/id715768417?mt=12)
+* [XCode](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12)
+* [Integrity](https://itunes.apple.com/gb/app/integrity/id513610341?mt=12) - link checker
+
+Licensed software, see [software licenses](software.md):
+
+* MAMP Pro
+* PHPStorm
+* Paw 
+* Sketch
+* TextMate 
+* Transmit 
+
+Ask the new developer to run through [Developer setup](developer-setup.md).
+
 ## Terminal
 
 Update shell (Catalina and above).
