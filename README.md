@@ -4,31 +4,6 @@ Standard Mac setup for developers at Studio 24.
 
 _Note: this is a work-in-progress and Alan will likely move this into the Mac Setup / Addigy._
 
-## Old text from handbook
-
-See https://github.com/studio24/dev-mac-setup/
-
-* [iTerm2](http://iterm2.com) - Terminal replacement
-* [Sequel Pro](http://www.sequelpro.com/download) - MySQL management tool
-* [SourceTree](http://www.sourcetreeapp.com/download/)
-
-Install via App Store:
-
-* [Microsoft Remote Desktop](https://itunes.apple.com/gb/app/microsoft-remote-desktop/id715768417?mt=12)
-* [XCode](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12)
-* [Integrity](https://itunes.apple.com/gb/app/integrity/id513610341?mt=12) - link checker
-
-Licensed software, see [software licenses](software.md):
-
-* MAMP Pro
-* PHPStorm
-* Paw 
-* Sketch
-* TextMate 
-* Transmit 
-
-Ask the new developer to run through [Developer setup](developer-setup.md).
-
 ## Terminal
 
 Update shell (Catalina and above).
@@ -49,9 +24,17 @@ Install Xcode Tools
 xcode-select --install
 ```
 
-## Git
+## Homebrew
 
-[Install Git](https://git-scm.com/download/mac)
+[Install Homebrew](https://brew.sh)
+
+Verify it works.
+
+```bash
+brew doctor
+```
+
+## Git
 
 Setup
 
@@ -60,29 +43,40 @@ git config --global user.name "Your Name"
 git config --global user.email you@example.com
 ```
 
-Create a secure SSH key with a password. See [Setup SSH key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+Create a secure SSH key with a password. Store your SSH key password in your personal private vault in 1Password.
 
-Copy keys to [GitHub](https://github.com/settings/keys) and Bitbucket (go to Profile > Settings > SSH keys).
+See instructions on [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-Copy SSH key to clipboard
+* Copy keys to [GitHub](https://github.com/settings/keys) and [Bitbucket](https://bitbucket.org/account/ssh-keys/)
+* Set the key title to your computer name (so you remember where this came from)
+* To copy your SSH public key to the clipboard:
 
 ```bash
 pbcopy < ~/.ssh/id_rsa.pub
 ```
 
-Test access to GitHub
+* Test access to GitHub:
 
 ```bash
 ssh -T git@github.com
 ```
 
-Test access to Bitbucket
+
+If this doesn't work, add the following to `~/.ssh/config`:
+
+```
+Host github.com
+ Hostname ssh.github.com
+ Port 443
+```
+
+* Test access to Bitbucket:
 
 ```bash
 ssh -T git@bitbucket.org
 ```
 
-Add your SSH key to [Studio 24 dev SSH keys repo](https://bitbucket.org/studio24/ssh-keys). This will give you permission to deploy websites.
+Developers should add your SSH key to [Studio 24 dev SSH keys repo](https://bitbucket.org/studio24/ssh-keys). This will give you permission to deploy websites.
 
 **Important note:** always use SSH (secure shell) when cloning a git repo, not HTTPS.
 
@@ -95,31 +89,7 @@ git config --global core.excludesfile ~/.gitignore
 
 See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
 
-### Troubleshooting SSH access to GitHub
-
-If you get a Connection timed out error when connecting to GitHub via SSH try:
-
-```bash
-ssh -T -p 443 git@ssh.github.com
-```
-
-If that works, add the following to `~/.ssh/config`
-
-```bash
-Host github.com
-  Hostname ssh.github.com
-  Port 443
-```
-
-## Homebrew
-
-[Install Homebrew](https://brew.sh)
-
-Verify it works
-
-```bash
-brew doctor
-```
+## Software packages
 
 Install following packages via Homebrew
 
@@ -137,6 +107,10 @@ brew install nvm
 brew install python
 brew install composer
 brew install wp-cli
+
+paw
+sketch
+transmit
 ```
 
 This installs the following extra CLI commands
