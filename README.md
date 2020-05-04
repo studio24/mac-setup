@@ -103,6 +103,7 @@ brew cask install docker
 brew install wget
 brew install node
 brew install nvm
+brew install ruby
 brew install python
 brew install composer
 brew install wp-cli
@@ -134,6 +135,16 @@ If you have a license (front-end team):
 ```
 brew cask install sketch
 ```
+
+### Ruby setup
+
+Run the following to add the path to ruby in your `~/.zshrc` file:
+
+```
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+```
+
+If you need to install software via Ruby, the Jekyll docs have a [good guide to installing software locally](https://jekyllrb.com/docs/installation/macos/#install-jekyll) (also requires adding a path to getm to your `~/.zshrc` file).
 
 ### NVM setup
 
