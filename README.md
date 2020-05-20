@@ -106,6 +106,7 @@ brew install nvm
 brew install ruby
 brew install python
 brew install composer
+brew install deployer
 brew install wp-cli
 ```
 
