@@ -106,6 +106,21 @@ git config --global core.excludesfile ~/.gitignore
 
 See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
 
+## PHP
+
+```bash
+brew install php
+brew install php@7.3
+brew install php@7.4
+brew install brew-php-switcher
+```
+
+To switch to PHP 7.4 use:
+
+```bash
+brew-php-switcher 7.4
+```
+
 ## Software packages
 
 Install following packages via Homebrew
