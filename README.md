@@ -49,6 +49,8 @@ Update to latest version
 
 ```bash
 brew update
+brew upgrade
+brew cleanup
 ```
 
 ## Git
@@ -115,11 +117,41 @@ brew install php@7.4
 brew install brew-php-switcher
 ```
 
+Install required PHP modules:
+
+```bash
+pecl install xdebug
+```
+
 To switch to PHP 7.4 use:
 
 ```bash
 brew-php-switcher 7.4
 ```
+
+### XDebug 3
+
+Edit `php.ini` file for your current version of PHP. View install location of Xdebug via `pecl list xdebug`
+
+Example:
+
+```
+zend_extension="/usr/local/Cellar/php@7.4/7.4.14_1/pecl/20190902/xdebug.so"
+xdebug.mode=debug
+xdebug.client_host=127.0.0.1
+xdebug.client_port="9003"
+```
+
+Test this works by running `php --version`
+
+XDebug should be listed among the installed extensions.
+
+Next, see instructions on configuring [XDebug in PHPStorm](https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html#integrationWithProduct).
+
+### Debugging code
+
+* [Debugging a CLI script](https://www.jetbrains.com/help/phpstorm/debugging-a-php-cli-script.html) - you may need to set the working directory to make the CLI script act as intended
+* [Debugging an HTTP request](https://www.jetbrains.com/help/phpstorm/debugging-a-php-http-request.html)
 
 ## Software packages
 
@@ -132,6 +164,7 @@ brew cask install textmate
 brew cask install tableplus
 brew cask install docker
 
+brew install openssl
 brew install wget
 brew install node
 brew install nvm
