@@ -55,7 +55,13 @@ brew cleanup
 
 ## Git
 
-Setup
+Set default brtanch to main:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+User setup: 
 
 ```bash
 git config --global user.name "Your Name"
