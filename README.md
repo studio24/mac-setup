@@ -164,11 +164,13 @@ Next, see instructions on configuring [XDebug in PHPStorm](https://www.jetbrains
 Install following packages via Homebrew
 
 ```bash
-brew cask install iterm2
-brew cask install paw
-brew cask install textmate
-brew cask install tableplus
-brew cask install docker
+brew install --cask iterm2
+brew install --cask paw
+brew install --cask textmate
+brew install --cask tableplus
+brew install --cask cyberduck
+brew install --cask docker
+
 
 brew install openssl
 brew install wget
@@ -189,7 +191,7 @@ This installs the following extra CLI commands
 ### PHPStorm
 
 ```
-brew cask install phpstorm
+brew install --cask phpstorm
 ```
 
 When you setup PHPStorm install the following plugins:
@@ -205,7 +207,7 @@ Login to your JetBrains account to activate.
 If you have a license (front-end team):
 
 ```
-brew cask install sketch
+brew install --cask sketch
 ```
 
 ### Ruby setup
