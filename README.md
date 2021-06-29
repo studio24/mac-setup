@@ -55,7 +55,7 @@ brew cleanup
 
 ## Git
 
-Set default brtanch to main:
+Set default branch to main:
 
 ```bash
 git config --global init.defaultBranch main
@@ -187,6 +187,108 @@ This installs the following extra CLI commands
 
 * `mate` CLI command to open text files in Textmate
 * `python3` and `pip3` for Python 3
+
+### MySQL
+
+```bash
+brew install mysql@5.7
+```
+
+This installs MySQL 5.7 locally, follow the on-screen prompt to run as a service. 
+
+Default username is ```root```
+
+No default password  
+
+To add a password to MySQL and add security run  
+
+```bash
+mysql_secure_installation
+```
+This will prompt for user intervention
+```bash
+Would you like to setup VALIDATE PASSWORD plugin?
+```
+Enter ```y```
+```bash
+Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:
+```
+Enter the required level (0)
+Enter a new password when prompted and confirm (rootrogot)
+
+```bash
+Do you wish to continue with the password provided?
+Remove anonymous users?
+Disallow root login remotely?
+Remove test database and access to it?
+Reload privilege tables now?
+```
+Enter ```y``` to all of the above prompts  
+
+You should now be able to connect via SQL Ace or the CLI via 
+
+* 127.0.0.1/localhost
+* User: root
+* Password: rootroot
+
+### Apache
+
+Edit the Apache configuration file:
+
+```
+sudo nano /etc/apache2/httpd.conf
+```
+
+Find the following line:
+
+```
+#Include /private/etc/apache2/extra/httpd-vhosts.conf
+```
+
+Below it, add the following line:
+
+```
+Include /private/etc/apache2/vhosts/*.conf
+```
+
+This configures Apache to include all files ending in `.conf` in the `/private/etc/apache2/vhosts/` directory. Now we need to create this directory.
+
+```
+mkdir /etc/apache2/vhosts
+cd /etc/apache2/vhosts
+```
+
+We can then create a new file eg
+
+```sudo nano studio24.conf```
+
+Then add the details for the host
+
+```
+<VirtualHost *:80>
+        DocumentRoot "/Users/sjones/Sites/studio24/web"
+        ServerName local.studio24.net
+        ErrorLog "/private/var/log/apache2/local.studio24.net-error_log"
+        CustomLog "/private/var/log/apache2/local.studio24.net-access_log" common
+
+        <Directory "/Users/sjones/Sites/studio24/web">
+            AllowOverride All
+            Require all granted
+        </Directory>
+</VirtualHost>
+```
+
+Check the Apache config
+
+```
+sudo apachectl configtest
+```
+
+(Re)start the Apache service
+
+```
+sudo apachectl restart
+```
 
 ### PHPStorm
 
