@@ -18,6 +18,12 @@ Create Sites folder
 mkdir ~/Sites
 ```
 
+Create Infrastructure folder (Support Team only). 
+
+```bash
+mkdir ~/Infrastructure
+```
+
 ## Install Xcode CLI tools
 
 Install Xcode Tools
@@ -116,23 +122,16 @@ See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
 
 ## PHP
 
+PHP versioning is managed via MAMP Pro. When changing PHP version in MAMP Pro either
+1. Open a new terminal window and then check the PHP version
 ```bash
-brew install php
-brew install php@7.3
-brew install php@7.4
-brew install brew-php-switcher
+php -v
 ```
-
-Install required PHP modules:
-
-```bash
-pecl install xdebug
+or 
+2. Run the below command to pickup the changes and then check the PHP version
 ```
-
-To switch to PHP 7.4 use:
-
-```bash
-brew-php-switcher 7.4
+source = ~/.profile
+php -v
 ```
 
 ### XDebug 3
@@ -164,13 +163,9 @@ Next, see instructions on configuring [XDebug in PHPStorm](https://www.jetbrains
 Install following packages via Homebrew
 
 ```bash
-brew install --cask iterm2
 brew install --cask paw
 brew install --cask textmate
-brew install --cask tableplus
 brew install --cask cyberduck
-brew install --cask docker
-
 
 brew install openssl
 brew install wget
@@ -232,63 +227,9 @@ You should now be able to connect via SQL Ace or the CLI via
 * Password: rootroot
 
 ### Apache
-
-Edit the Apache configuration file:
-
-```
-sudo nano /etc/apache2/httpd.conf
-```
-
-Find the following line:
-
-```
-#Include /private/etc/apache2/extra/httpd-vhosts.conf
-```
-
-Below it, add the following line:
-
-```
-Include /private/etc/apache2/vhosts/*.conf
-```
-
-This configures Apache to include all files ending in `.conf` in the `/private/etc/apache2/vhosts/` directory. Now we need to create this directory.
-
-```
-mkdir /etc/apache2/vhosts
-cd /etc/apache2/vhosts
-```
-
-We can then create a new file eg
-
-```sudo nano studio24.conf```
-
-Then add the details for the host
-
-```
-<VirtualHost *:80>
-        DocumentRoot "/Users/sjones/Sites/studio24/web"
-        ServerName local.studio24.net
-        ErrorLog "/private/var/log/apache2/local.studio24.net-error_log"
-        CustomLog "/private/var/log/apache2/local.studio24.net-access_log" common
-
-        <Directory "/Users/sjones/Sites/studio24/web">
-            AllowOverride All
-            Require all granted
-        </Directory>
-</VirtualHost>
-```
-
-Check the Apache config
-
-```
-sudo apachectl configtest
-```
-
-(Re)start the Apache service
-
-```
-sudo apachectl restart
-```
+Apache is managed via MAMP Pro. 
+1. Ensure that you enable SSL for local development
+2. When upgrading MAMP Pro it may comment out any Additional Paramters within Hosts -> Apache
 
 ### PHPStorm
 
