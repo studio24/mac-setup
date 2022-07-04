@@ -18,14 +18,6 @@ Create Infrastructure folder (Support Team only).
 mkdir ~/Infrastructure
 ```
 
-### Note with Big Sur
-
-When running `brew update` If you get the error `Error: Your CLT does not support macOS 11` you may need to ensure 
-
-```bash
-sudo rm -rf /Library/Developer/CommandLineTools
-sudo xcode-select --install
-```
 
 ## Homebrew
 
