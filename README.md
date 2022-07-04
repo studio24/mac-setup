@@ -6,12 +6,6 @@ _Note: this is a work-in-progress and Alan will likely move this into the Mac Se
 
 ## Terminal
 
-Update shell (Catalina and above).
-
-```bash
-chsh -s /bin/zsh
-```
-
 Create Sites folder
 
 ```bash
@@ -22,14 +16,6 @@ Create Infrastructure folder (Support Team only).
 
 ```bash
 mkdir ~/Infrastructure
-```
-
-## Install Xcode CLI tools
-
-Install Xcode Tools
-
-```bash
-xcode-select --install
 ```
 
 ### Note with Big Sur
@@ -57,7 +43,40 @@ Update to latest version
 brew update
 brew upgrade
 brew cleanup
+```  
+## Software packages
+
+Install following packages via Homebrew
+
+Required:
+```bash
+brew install --cask iterm2
+brew install --cask phpstorm
+
+brew install openssl
+brew install wget
+brew install node
+brew install nvm
+brew install ruby
+brew install python
+brew install composer
+brew install deployer
+brew install wp-cli
 ```
+Optional
+```bash
+brew install --cask paw
+brew install --cask textmate
+brew install --cask cyberduck
+brew install --cask visual-studio-code
+brew install --cask sketch
+brew install --cask transmit
+brew install --cask sublime-text
+```
+This installs the following extra CLI commands
+
+* `mate` CLI command to open text files in Textmate
+* `python3` and `pip3` for Python 3  
 
 ## Git
 
@@ -158,30 +177,6 @@ Next, see instructions on configuring [XDebug in PHPStorm](https://www.jetbrains
 * [Debugging a CLI script](https://www.jetbrains.com/help/phpstorm/debugging-a-php-cli-script.html) - you may need to set the working directory to make the CLI script act as intended
 * [Debugging an HTTP request](https://www.jetbrains.com/help/phpstorm/debugging-a-php-http-request.html)
 
-## Software packages
-
-Install following packages via Homebrew
-
-```bash
-brew install --cask paw
-brew install --cask textmate
-brew install --cask cyberduck
-
-brew install openssl
-brew install wget
-brew install node
-brew install nvm
-brew install ruby
-brew install python
-brew install composer
-brew install deployer
-brew install wp-cli
-```
-
-This installs the following extra CLI commands
-
-* `mate` CLI command to open text files in Textmate
-* `python3` and `pip3` for Python 3
 
 ### MySQL
 
