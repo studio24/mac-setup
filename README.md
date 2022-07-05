@@ -146,75 +146,10 @@ source = ~/.profile
 php -v
 ```
 
-### XDebug 3
-
-Edit `php.ini` file for your current version of PHP. View install location of Xdebug via `pecl list xdebug`
-
-Example:
-
-```
-zend_extension="/usr/local/Cellar/php@7.4/7.4.14_1/pecl/20190902/xdebug.so"
-xdebug.mode=debug
-xdebug.client_host=127.0.0.1
-xdebug.client_port="9003"
-```
-
-Test this works by running `php --version`
-
-XDebug should be listed among the installed extensions.
-
-Next, see instructions on configuring [XDebug in PHPStorm](https://www.jetbrains.com/help/phpstorm/configuring-xdebug.html#integrationWithProduct).
-
 ### Debugging code
 
 * [Debugging a CLI script](https://www.jetbrains.com/help/phpstorm/debugging-a-php-cli-script.html) - you may need to set the working directory to make the CLI script act as intended
 * [Debugging an HTTP request](https://www.jetbrains.com/help/phpstorm/debugging-a-php-http-request.html)
-
-
-### MySQL
-
-**Note:** This must be ran in a Rosetta mode terminal
-
-```bash
-brew install mysql@5.7
-```
-
-This installs MySQL 5.7 locally, follow the on-screen prompt to run as a service. 
-
-Default username is ```root```
-
-No default password  
-
-To add a password to MySQL and add security run  
-
-```bash
-mysql_secure_installation
-```
-This will prompt for user intervention
-```bash
-Would you like to setup VALIDATE PASSWORD plugin?
-```
-Enter ```y```
-```bash
-Please enter 0 = LOW, 1 = MEDIUM and 2 = STRONG:
-```
-Enter the required level (0)
-Enter a new password when prompted and confirm (rootrogot)
-
-```bash
-Do you wish to continue with the password provided?
-Remove anonymous users?
-Disallow root login remotely?
-Remove test database and access to it?
-Reload privilege tables now?
-```
-Enter ```y``` to all of the above prompts  
-
-You should now be able to connect via SQL Ace or the CLI via 
-
-* 127.0.0.1/localhost
-* User: root
-* Password: rootroot
 
 ### Migrate Sequel Ace connection info
 To migrate all of your Sequel Ace DB info.
