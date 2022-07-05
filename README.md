@@ -54,8 +54,15 @@ brew install python
 brew install composer
 brew install deployer
 brew install wp-cli
+brew install pyenv
+```  
+Support Team only:
 ```
-Optional
+brew install direnv
+brew install --cask aws-vault
+brew install warrensbox/tap/tfswitch
+```
+Optional:
 ```bash
 brew install --cask paw
 brew install --cask textmate
@@ -212,6 +219,16 @@ You should now be able to connect via SQL Ace or the CLI via
 * 127.0.0.1/localhost
 * User: root
 * Password: rootroot
+
+### Migrate Sequel Ace connection info
+To migrate all of your Sequel Ace DB info.
+* Open a connection window
+* Select all the DB's in the left hand column
+* Right Click and select 'export selected'
+* Save to a relevant place
+* Send to new Macbook via Slack or Google Drive
+* Import on new Macbook
+**Note:** You will need to re-attach any passwords SSH keys.
 
 ### Apache
 Apache is managed via MAMP Pro. 
