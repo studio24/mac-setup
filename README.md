@@ -96,7 +96,7 @@ Create a secure SSH key with a password. Store your SSH key password in your per
 
 See instructions on [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
-* Copy keys to [GitHub](https://github.com/settings/keys) and [Bitbucket](https://bitbucket.org/account/ssh-keys/)
+* Copy keys to [GitHub](https://github.com/settings/keys)
 * Set the key title to your computer name (so you remember where this came from)
 * To copy your SSH public key to the clipboard:
 
@@ -119,13 +119,7 @@ Host github.com
  Port 443
 ```
 
-* Test access to Bitbucket:
-
-```bash
-ssh -T git@bitbucket.org
-```
-
-Developers should add your SSH key to [Studio 24 dev SSH keys repo](https://bitbucket.org/studio24/ssh-keys). This will give you permission to deploy websites.
+Developers should add your SSH key to [Studio 24 dev SSH keys repo](https://github.com/studio24/ssh-keys). This will give you permission to deploy websites.
 
 **Important note:** always use SSH (secure shell) when cloning a git repo, not HTTPS.
 
