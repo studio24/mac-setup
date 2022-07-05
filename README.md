@@ -173,6 +173,8 @@ Next, see instructions on configuring [XDebug in PHPStorm](https://www.jetbrains
 
 ### MySQL
 
+**Note:** This must be ran in a Rosetta mode terminal
+
 ```bash
 brew install mysql@5.7
 ```
