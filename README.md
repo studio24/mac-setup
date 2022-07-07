@@ -163,9 +163,17 @@ To migrate all of your Sequel Ace DB info.
 **Note:** You will need to re-attach any passwords SSH keys.
 
 ### Apache
-Apache is managed via MAMP Pro. 
-1. Ensure that you enable SSL for local development
-2. When upgrading MAMP Pro it may comment out any Additional Paramters within Hosts -> Apache
+Apache is managed via MAMP Pro.
+
+1. Ensure that you enable SSL for local development.
+2. Ensure that MAMP is using the correct ports. By default it may be using alternative ones, which will result in connection refused errors unless you manually tag your connections with the correct port numbers.
+
+To use the default ports, click on "Ports & User" on the left navigation, and click the button: 
+
+"Set ports to 80, 81, 443, 7443, 3306 & 11211"
+
+Then save the settings and restart the servers.
+3. Note: When upgrading MAMP Pro it may comment out any Additional Parameters within Hosts -> Apache, so be sure to check these are still applied if you run into any problems after updating.
 
 ### PHPStorm
 
