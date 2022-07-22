@@ -88,8 +88,8 @@ You can read about [getting started with Slack](https://slack.com/intl/en-gb/hel
 
 Other software you'll need to create accounts for include the following. Invitations to use other software packages will be sent to your email account. 
 
-* Microsoft Office 
-* SonicWall Mobile Connect 
+* Microsoft Office
+* [SonicWall Mobile Connect](vpn.md)
 
 ### Access to web-based tools
 
