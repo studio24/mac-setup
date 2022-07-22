@@ -155,7 +155,7 @@ Tools for PM team and developers:
 
 * [GitHub](https://github.com/studio24/) (project code repository)
 * [JIRA](https://studio24.atlassian.net/jira/projects) (task management)
-* [Zendesk](https://studio24.zendesk.com/agent/dashboard) (support system)
+* [Zendesk](https://studio24.zendesk.com/agent/dashboard) (support system - please note we have issues accessing Zendesk in Firefox)
 
 ## 6) Setup steps for Support team
 
