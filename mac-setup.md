@@ -51,32 +51,48 @@ This process also:
 * Adds office printers
 * Sets up default finder and preferences
 
-## 3) Setting up software
+## 4) Setting up essential software
 
 In order to setup software on your Mac you first need email, 1Password and Slack so you can store complex, secure passwords and communicate with the team.
 
 ### Email
 
 * Open the Mail app
-* Select Other Mail account
-* Ensure your Name, Email Address and Password are filled in (the support team can provide this information)
-* On the next screen ensure the account type is IMAP and both incoming and outgoing servere are set as `secure.emailsrvr.com`
-* Tick "Mail" and Done
-* Select "Protect Mail Activity" and continue
+* Select "Other Mail account"
+* Ensure your username, email address and password are filled in (the support team can provide this information)
+* Ensure the account type is "IMAP" and both incoming and outgoing servere are set as `secure.emailsrvr.com`
+* Select the apps you want to use: tick "Mail" and untick "Notes"
+* Select "Protect Mail activity" and continue
 
 You can setup your email signature once your have intranet access via [Email signature](https://intranet.studio24.net/staff/email-signature). Copy and paste this into your Mail client (Preferences, Signatures).
 
 ### 1Password
 
-Once you have email access you should have an invitation to 1Password. If you haven't recieved this please contact Simon or Julie to add your user. You can read about [getting started with 1Password](https://support.1password.com/explore/team-member/).
+Once you have email access you should have an invitation to 1Password. If you haven't recieved this please contact Simon or Julie to add your user. 
+
+If you have an existing computer you can use this to setup 1Password on your new computer. Go to: _Accounts > Studio 24 > Set up another device_. You can scan a setup code or send yourself a link via email. 
+
+If you need to enter the account details the sign-in address is: `studio24.1password.com`
+
+You can read about [getting started with 1Password](https://support.1password.com/explore/team-member/).
 
 #### Choosing a good 1Password account password
 
 You will have to remember your 1Password account password, the Support team can reset this for you if required. We recommend using three random words, separated by spaces or hyphens. 
 
+#### 1Password browser extensions
+
+You can use 1Password via your web browser to make password entry easy. Visit https://support.1password.com/getting-started-browser/
+
 #### Password policy
 
 Once you have access to 1Password please ensure you store all your personal logins to your personal vault in 1Password (this is private to you). It is a requirement to set complex, secure passwords for all services. We define complex passwords as a minimum of 16 characters. We also recommend using two-factor authentication (2FA) wherever possible. 
+
+#### Emergency kit
+
+You can download an emergency kit with your key login details. See https://support.1password.com/emergency-kit/
+
+Do not store the emergency kit file on your computer, either move this to your personal Google Drive or print and store securely.
 
 ### Slack
 
@@ -84,11 +100,34 @@ Once you have email access you should receive an invite to Slack.
 
 You can read about [getting started with Slack](https://slack.com/intl/en-gb/help/articles/218080037-Getting-started-for-new-Slack-users).
 
-### Other software 
+## 4) Default admin user
+
+To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user. For further information on using the admin user account [User accounts](https://github.com/studio24/handbook-it/blob/Updated-mac-setup/it-guidelines/user-accounts.md).
+
+At the earliest opportunity, request that the support team create a temporary password for the default admin user. 
+
+You should then:
+
+1) log in as the user 'admin' using this temporary password 
+2) Change the password to a new strong password
+3) Store the new admin password in your personal vault in 1Password
+
+You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
+
+* Your email address
+* [Your secret key](https://support.1password.com/secret-key/)
+* Your 1Password account password
+
+If you have an existing computer you can access this via the "Set up another device" page. 
+
+If this if your first computer we recommend using your Emergency Kit from 1Password.
+
+## 5) Setting up other software 
 
 Other software you'll need to create accounts for include the following. Invitations to use other software packages will be sent to your email account. 
 
-* Microsoft Office
+* Alfred - if you want to use this open the app to configure it
+* Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
 * [SonicWall Mobile Connect](vpn.md)
 
 ### Access to web-based tools
@@ -107,21 +146,7 @@ Tools for PM team and developers:
 * [JIRA](https://studio24.atlassian.net/jira/projects) (task management)
 * [Zendesk](https://studio24.zendesk.com/agent/dashboard) (support system)
 
-## 4) Default admin user
-
-To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user.
-
-At the earliest opportunity, request that the support team change the password for the default admin user. 
-
-You should then:
-
-1) log in as the user 'admin' using this password 
-2) Change the password to a new strong passwword
-3) Store the new admin password in your personal vault in 1Password
-
-For further information see [User accounts](https://github.com/studio24/handbook-it/blob/Updated-mac-setup/it-guidelines/user-accounts.md).
-
-## 5) Setup steps for Support team
+## 6) Setup steps for Support team
 
 Once a new Mac has passed the intial setup, the support team need to action the following.
 
@@ -129,7 +154,7 @@ These commands are carried out within the [Addigy portal](https://prod.addigy.co
   
 * Setup Device Name via device facts
 * Setup asset tag
-* Setup Finder & Firmware password via 'Script' deployment
+* Setup Finder & firmware password via 'Script' deployment
 
 For developers:
 
@@ -137,11 +162,11 @@ For developers:
 
 **Note:** Macbooks running the M1 chip do not require a firrmware password as they have an additonal process built in to replace it. 
 
-## 6) For developers
+## 7) For developers
 
 Please also follow the [development setup guide](development-setup.md).
 
-## 7) For designers
+## 8) For designers
 
 * [Figma](https://www.figma.com/)
 * [Sketch](https://www.sketch.com/)
