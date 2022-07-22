@@ -2,32 +2,27 @@
 
 Standard Mac setup for developers at Studio 24.
 
-_Note: this is a work-in-progress and Alan will likely move this into the Mac Setup / Addigy._
-
 ## Terminal
 
-Create Sites folder
+Create Sites folder:
 
 ```bash
 mkdir ~/Sites
 ```
 
-Create Infrastructure folder (Support Team only). 
-
-```bash
-mkdir ~/Infrastructure
-```
-
-
 ## Homebrew
 
 [Install Homebrew](https://brew.sh)
+
+Make sure you run the commands to add Homebrew to your path (the install command tells you what this is).
 
 Verify it works.
 
 ```bash
 brew doctor
 ```
+
+If there are any recommendations, it's worth following them.
 
 Update to latest version
 
@@ -36,15 +31,14 @@ brew update
 brew upgrade
 brew cleanup
 ```  
+
 ## Software packages
 
-Install following packages via Homebrew
+Install following software via Homebrew. Please install packages from Homebrew one-by-one, since they may include setup instructions (e.g. for NVM):
 
-Required:
 ```bash
 brew install --cask iterm2
 brew install --cask phpstorm
-
 brew install openssl
 brew install wget
 brew install node
@@ -55,28 +49,54 @@ brew install composer
 brew install deployer
 brew install wp-cli
 brew install pyenv
-```  
-Support Team only:
 ```
-brew install direnv
-brew install --cask aws-vault
-brew install warrensbox/tap/tfswitch
-brew install coreutils
-```
-Optional:
+
+This installs the following CLI commands:
+
+* `composer` - PHP package manager
+* `dep` - Deployer (note: most modern projects use local Deployer loaded via Composer)
+* `npm` - Node Package Manager
+* `nvm` - Node Version Manager
+* `python3` and `pip3` for Python 3  
+* `wget` - tool to download files
+
+### PHPStorm
+
+When you setup PHPStorm install the following plugins:
+
+* .env files support
+* EditorConfig
+* Symfony 
+* Laravel
+
+Login to your JetBrains account to activate.
+
+### Ruby 
+
+If you need to install software via Ruby, the Jekyll docs have a [good guide to installing software locally](https://jekyllrb.com/docs/installation/macos/#install-jekyll) (also requires adding a path to get to your `~/.zshrc` file).
+
+### Optional software
+
+Optional, install these if you want to use them:
+
 ```bash
 brew install --cask paw
 brew install --cask textmate
 brew install --cask cyberduck
 brew install --cask visual-studio-code
-brew install --cask sketch
 brew install --cask transmit
 brew install --cask sublime-text
 ```
-This installs the following extra CLI commands
 
-* `mate` CLI command to open text files in Textmate
-* `python3` and `pip3` for Python 3  
+Textmate installs the following CLI commands:
+
+* `mate` - CLI command to open text files in Textmate
+
+If you have a license (front-end team):
+
+```
+brew install --cask sketch
+```
 
 ## Git
 
@@ -102,7 +122,7 @@ See instructions on [Generating a new SSH key and adding it to the ssh-agent](ht
 * To copy your SSH public key to the clipboard:
 
 ```bash
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 
 * Test access to GitHub:
@@ -110,7 +130,6 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```bash
 ssh -T git@github.com
 ```
-
 
 If this doesn't work, add the following to `~/.ssh/config`:
 
@@ -133,7 +152,17 @@ git config --global core.excludesfile ~/.gitignore
 
 See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
 
-## PHP
+## MAMP
+
+We find MAMP works well for us as a local development environment. If you have advanced requirements we can also use Docker, talk to the Support Team.
+
+Please note: you need the Privileges app to use MAMP Pro, this should be installed via Addigy.
+
+1) Download from the website: [MAMP Pro](https://www.mamp.info/en/downloads/)
+2) Open the Privileges app and "request privileges" so you are in admin mode
+3) Open "MAMP Pro" and register with your personal license code (see 1Password)
+
+### PHP
 
 PHP versioning is managed via MAMP Pro. When changing PHP version in MAMP Pro either
 1. Open a new terminal window and then check the PHP version
@@ -174,50 +203,3 @@ To use the default ports, click on "Ports & User" on the left navigation, and cl
 
 Then save the settings and restart the servers.
 3. Note: When upgrading MAMP Pro it may comment out any Additional Parameters within Hosts -> Apache, so be sure to check these are still applied if you run into any problems after updating.
-
-### PHPStorm
-
-```
-brew install --cask phpstorm
-```
-
-When you setup PHPStorm install the following plugins:
-* .env files support
-* EditorConfig
-* Symfony 
-* Laravel
-
-Login to your JetBrains account to activate.
-
-### Sketch
-
-If you have a license (front-end team):
-
-```
-brew install --cask sketch
-```
-
-### Ruby setup
-
-Run the following to add the path to ruby in your `~/.zshrc` file:
-
-```
-echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
-```
-
-If you need to install software via Ruby, the Jekyll docs have a [good guide to installing software locally](https://jekyllrb.com/docs/installation/macos/#install-jekyll) (also requires adding a path to getm to your `~/.zshrc` file).
-
-### NVM setup
-
-```
-mkdir ~/.nvm
-```
-
-Edit `~/.zshrc` and add:
-
-```
-# NVM
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-```
