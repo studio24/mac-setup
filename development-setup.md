@@ -152,7 +152,9 @@ git config --global core.excludesfile ~/.gitignore
 
 See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
 
-## MAMP
+## Local development environment
+
+### MAMP Pro
 
 We find MAMP works well for us as a local development environment. If you have advanced requirements we can also use Docker, talk to the Support Team.
 
