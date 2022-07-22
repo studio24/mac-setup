@@ -82,17 +82,25 @@ You will have to remember your 1Password account password, the Support team can 
 
 #### 1Password browser extensions
 
-You can use 1Password via your web browser to make password entry easy. Visit https://support.1password.com/getting-started-browser/
+[Install browser extensions](https://support.1password.com/getting-started-browser/) to use 1Password via your web browser to make password entry easy. 
 
 #### Password policy
 
-Once you have access to 1Password please ensure you store all your personal logins to your personal vault in 1Password (this is private to you). It is a requirement to set complex, secure passwords for all services. We define complex passwords as a minimum of 16 characters. We also recommend using two-factor authentication (2FA) wherever possible. 
+Once you have access to 1Password please ensure you store all your personal logins to your personal vault in 1Password (this is private to you). It is a requirement to set complex, secure passwords for all services. We define complex passwords as a minimum of 15 characters. We also recommend using two-factor authentication (2FA) wherever possible. 
 
 #### Emergency kit
 
-You can download an emergency kit with your key login details. See https://support.1password.com/emergency-kit/
+You can [download an emergency kit](https://support.1password.com/emergency-kit/) with your key login details. 
 
 Do not store the emergency kit file on your computer, either move this to your personal Google Drive or print and store securely.
+
+#### Disable password saving in your browser
+
+You should store passwords in 1Password and not your web browser for security. 
+
+* Safari - Preferences > AutoFill > untick "Usernames and passwords"
+* Firefox - Preferences > Privacy & Security > untick "Ask to save logins and passwords for websites"
+* Chrome - Settings > Auto-fill > Passwords > untick "Offer to save passwords"
 
 ### Slack
 
@@ -102,14 +110,14 @@ You can read about [getting started with Slack](https://slack.com/intl/en-gb/hel
 
 ## 4) Default admin user
 
-To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user. For further information on using the admin user account [User accounts](https://github.com/studio24/handbook-it/blob/Updated-mac-setup/it-guidelines/user-accounts.md).
+To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user. You can read further information on using the [admin user account](https://github.com/studio24/handbook-it/blob/Updated-mac-setup/it-guidelines/user-accounts.md).
 
 At the earliest opportunity, request that the support team create a temporary password for the default admin user. 
 
 You should then:
 
-1) log in as the user 'admin' using this temporary password 
-2) Change the password to a new strong password
+1) log in as the user "admin" using this temporary password 
+2) Change the password to a new complex password
 3) Store the new admin password in your personal vault in 1Password
 
 You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
@@ -124,9 +132,10 @@ If this if your first computer we recommend using your Emergency Kit from 1Passw
 
 ## 5) Setting up other software 
 
-Other software you'll need to create accounts for include the following. Invitations to use other software packages will be sent to your email account. 
+Other software you'll need to create accounts for include the following. Invitations to create accounts for software and web-based tools will be sent to your email account. 
 
 * Alfred - if you want to use this open the app to configure it
+* Google Drive - open up the app and sign in
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
 * [SonicWall Mobile Connect](vpn.md)
 
@@ -139,6 +148,8 @@ Web-based tools you'll need to create accounts for are:
 * [Studio 24 intranet](https://intranet.studio24.net/)
 * [Tick](https://studio24.tickspot.com/) (time tracking)
 * [Timetastic](https://app.timetastic.co.uk/wallchart) (booking holidays)
+
+Set your default web browser to whichever you are more comfortable with (Firefox, Chrome or Safari).
 
 Tools for PM team and developers:
 
