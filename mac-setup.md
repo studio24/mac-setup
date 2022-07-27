@@ -25,6 +25,8 @@ All Mac systems are automatically added to this process when purchased from Appl
 * Choose True Tone display yes/no
 * Enable Location Services to set Date/Time 
 
+If you are in the office you can connect to "CMILL-Tenant" Wi-Fi (details in 1Password under "S24 Staff WiFi - Chesterton Mill").
+
 ## 2) Automatically downloading software
 
 All of the major software is installed (and updated) automatically by Addigy in the background. Please note, this can take some time and some users have reported it takes up to a day to download all software. You can check progress via [Launchpad](https://support.apple.com/en-us/HT202635) which shows all your apps.
@@ -137,7 +139,8 @@ Other software you'll need to create accounts for include the following. Invitat
 * Alfred - if you want to use this open the app to configure it
 * Google Drive - open up the app and sign in
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
-* [SonicWall Mobile Connect](vpn.md)
+* ESET security - you'll be sent an email invititation to download this. Follow all instructions on setup.
+* [SonicWall Mobile Connect](vpn.md) 
 
 ### Access to web-based tools
 
