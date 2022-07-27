@@ -154,11 +154,19 @@ See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
 
 ## Local development environment
 
+## Privileges
+
+You can use the privileges app to temporarily act as an admin user, you'll need to do this to start MAMP. 
+
+* Open "Privileges" app
+* Right-click the icon and select Options > Keep in Dock
+* Select "request privileges" to setup this up for the first time
+
+You can now toggle privileges in the dock at any time. Make sure you toggle privileges to open MAMP, you can toggle privileges back after MAMP has opened.
+
 ### MAMP Pro
 
 We find MAMP works well for us as a local development environment. If you have advanced requirements we can also use Docker, talk to the Support Team.
-
-Please note: you need the Privileges app to use MAMP Pro, this should be installed via Addigy.
 
 1) Download from the website: [MAMP Pro](https://www.mamp.info/en/downloads/)
 2) Open the Privileges app and "request privileges" so you are in admin mode
