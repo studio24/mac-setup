@@ -139,8 +139,19 @@ Other software you'll need to create accounts for include the following. Invitat
 * Alfred - if you want to use this open the app to configure it
 * Google Drive - open up the app and sign in
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
-* ESET security - you'll be sent an email invititation to download this. Follow all instructions on setup.
 * [SonicWall Mobile Connect](vpn.md) 
+
+### ESET endpoint security
+
+This is our anti-virus and security software, which everyone needs to run on their computers.
+
+You'll be sent an email invititation to download this. Follow all instructions on setup.
+
+You can remove ESET from the dock via:
+
+* Go to ESET > Preferences
+* Go to Preferences > User > Interface
+* Untick "Present application in Dock"
 
 ### Access to web-based tools
 
