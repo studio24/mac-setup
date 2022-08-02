@@ -49,6 +49,8 @@ brew install composer
 brew install deployer
 brew install wp-cli
 brew install pyenv
+brew install awscli
+brew install nano
 ```
 
 This installs the following CLI commands:
