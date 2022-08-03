@@ -139,8 +139,8 @@ Other software you'll need to create accounts for include the following. Invitat
 * Alfred - if you want to use this open the app to configure it
 * Google Drive - open up the app and sign in
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
-* [SonicWall Mobile Connect](vpn.md) 
-* [3cx telephone](3cx.md)
+* [VPN - SonicWall Mobile Connect](vpn.md) 
+* [Telephone system - 3CX](3cx.md)
 
 ### ESET endpoint security
 
