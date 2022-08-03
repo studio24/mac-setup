@@ -285,6 +285,8 @@ You can access MySQL locally via Sequel Ace.
 * Password: see 1Password for the root password you just set
 * Test the connection to ensure this works
 
+When creating new databases it's recommended to select the encoding `UTF-8 Unicode (utf8mb4)`
+
 #### Migrating Sequel Ace connections
 If you want to migrate all of your Sequel Ace DB connections from your old Mac, do the following:
 
