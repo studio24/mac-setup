@@ -28,7 +28,9 @@ Try connecting to test this works.
 
 ## Resetting your password
 
-The Support Team may set a temporary password and ask you to reset your VPN login password. A reset password screen will appear when you try to connect (see below). Please create a secure password and store this in your personal vault in 1Password.
+The Support Team may set a temporary password and ask you to reset your VPN login password. A reset password screen will appear when you try to connect (see below). Please create a secure password and store this in your personal vault in 1Password.  
+
+![Password reset image](images/password-reset.png)
 
 ## Usage
 1. Open the app, this can be found via Alfred by searching for `sonicwall`
