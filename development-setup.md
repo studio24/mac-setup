@@ -55,8 +55,10 @@ brew install nano
 
 This installs the following CLI commands:
 
+* `aws` - AWS CLI
 * `composer` - PHP package manager
 * `dep` - Deployer (note: most modern projects use local Deployer loaded via Composer)
+* `nano` - Simple text editor
 * `npm` - Node Package Manager
 * `nvm` - Node Version Manager
 * `python3` and `pip3` for Python 3  
@@ -72,10 +74,6 @@ When you setup PHPStorm install the following plugins:
 * Laravel
 
 Login to your JetBrains account to activate.
-
-### Ruby 
-
-If you need to install software via Ruby, the Jekyll docs have a [good guide to installing software locally](https://jekyllrb.com/docs/installation/macos/#install-jekyll) (also requires adding a path to get to your `~/.zshrc` file).
 
 ### Optional software
 
@@ -141,7 +139,10 @@ Host github.com
  Port 443
 ```
 
-Developers should add your SSH key to [Studio 24 dev SSH keys repo](https://github.com/studio24/ssh-keys). This will give you permission to deploy websites.
+## SSH keys for deployment
+Developers need to add your SSH key to [Studio 24 dev SSH keys repo](https://github.com/studio24/ssh-keys). This will give you permission to deploy websites.
+
+Please note these SSH keys are updated every half an hour on servers.
 
 **Important note:** always use SSH (secure shell) when cloning a git repo, not HTTPS.
 
@@ -172,7 +173,56 @@ We find MAMP works well for us as a local development environment. If you have a
 
 1) Download from the website: [MAMP Pro](https://www.mamp.info/en/downloads/)
 2) Open the Privileges app and "request privileges" so you are in admin mode
-3) Open "MAMP Pro" and register with your personal license code (see 1Password)
+3) Open `MAMP Pro` and register with your personal license code (see 1Password)
+4) Select the "Expert view" in MAMP Pro
+5) Select "Ports & User" 
+6) Set the default ports by selecting "Set ports to 80, 81, 443, 7443, 3306 & 11211" and select "Save"
+
+You can test your MAMP Pro setup by visiting http://localhost/ which should point to `~/Sites/localhost`
+
+### SSL setup
+
+To get self-signed SSLs working reliably on all web browsers we recommend using [mkcert](https://github.com/FiloSottile/mkcert).
+
+Install via:
+
+```
+brew install mkcert
+brew install nss
+```
+
+To create a locally-trusted development certificate run:
+
+```
+mkcert -install
+```
+
+You'll need to enter your admin credentials.
+
+TODO??
+
+The first time you add a host MAMP Pro should tell you "The SSL environment needs to be set-up." 
+
+This should auto-setup SSL and may ask for your admin credentials. If you have any issues with this ask the Support Team.
+
+### Add your first host
+We use a shared local URL for local development websites. Find this in the README of your project in [GitHub](https://github.com/studio24).
+
+It is also recommended to have the project checked out in your local `~/Sites` folder before you add the host in MAMP.
+
+1) Select "Add Host"
+2) Select "Empty"
+3) Enter your local website URL
+4) Choose your local document root, this is normally `public` or `web`
+5) Select "Create host"
+6) Select "Save" and restart MAMP services
+
+You should now be able to visit your local development URL in a browser. Please note only Chrome and Safari recognise the MAMP Pro self-signed SSL certificates. 
+
+To get your local development website working in Firefox 
+
+
+
 
 ### PHP
 
@@ -203,15 +253,3 @@ To migrate all of your Sequel Ace DB info.
 * Import on new Macbook
 **Note:** You will need to re-attach any passwords SSH keys.
 
-### Apache
-Apache is managed via MAMP Pro.
-
-1. Ensure that you enable SSL for local development.
-2. Ensure that MAMP is using the correct ports. By default it may be using alternative ones, which will result in connection refused errors unless you manually tag your connections with the correct port numbers.
-
-To use the default ports, click on "Ports & User" on the left navigation, and click the button: 
-
-"Set ports to 80, 81, 443, 7443, 3306 & 11211"
-
-Then save the settings and restart the servers.
-3. Note: When upgrading MAMP Pro it may comment out any Additional Parameters within Hosts -> Apache, so be sure to check these are still applied if you run into any problems after updating.
