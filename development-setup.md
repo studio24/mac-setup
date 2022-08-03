@@ -185,8 +185,8 @@ It is also recommended to have the project checked out in your local `~/Sites` f
 2) Select "Empty"
 3) Enter your local website URL
 4) Choose your local document root, this is normally `public` or `web`
-5) Select "Create host"
-6) Select "Save" and restart MAMP services
+6) Select "Create host"
+7) Select "Save" and restart MAMP services
 
 You should now be able to visit your local development URL in a browser. 
 
@@ -242,6 +242,7 @@ In MAMP in the "PHP" section:
 
 * Tick "Activate command line shortcuts for the selected PHP version"
 * Tick "Also activate shortcut for Composer"
+* Under "Log errors" tick "to screen" to output local errors to screen
 * Select "Save" to restart services
 
 This installs the following CLI commands (for your current version of PHP):
