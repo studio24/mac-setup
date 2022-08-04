@@ -33,6 +33,7 @@ brew install --cask iterm2
 brew install --cask phpstorm
 brew install --cask tuple
 brew install --cask github
+brew install --cask imageoptim
 brew install openssl
 brew install wget
 brew install node
