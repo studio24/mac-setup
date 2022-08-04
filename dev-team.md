@@ -153,7 +153,7 @@ You can use the privileges app to temporarily act as an admin user, you'll need 
 * Right-click the icon and select Options > Keep in Dock
 * Select "request privileges" to setup this up for the first time
 
-You can now toggle privileges in the dock at any time. Make sure you toggle privileges to open MAMP, you can toggle privileges back after MAMP has opened.
+You can now toggle privileges in the dock at any time. Make sure you toggle privileges to open MAMP, you must toggle privileges back after MAMP has opened.
 
 ## Local development environment
 

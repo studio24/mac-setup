@@ -16,6 +16,8 @@ with GitHub. As an example, to clone this repo you'd use: `git clone git@github.
 We find MAMP works well for us as a local development environment. If you have advanced requirements we can also use 
 [Docker](https://www.docker.com/), talk to the Support Team.
 
+### Installing MAMP
+
 1) Download from the website: [MAMP Pro](https://www.mamp.info/en/downloads/)
 2) Open the Privileges app and "request privileges" so you are in admin mode
 3) Open `MAMP Pro` and register with your personal license code (see 1Password)
@@ -40,6 +42,14 @@ It is also recommended to have the project checked out in your local `~/Sites` f
 You should now be able to visit your local development URL in a browser.
 
 By default MAMP creates self-signed SSLs which only work in Chrome and Safari, to get HTTPS working everywhere on your Mac we recommend setting up local SSL as detailed below.
+
+### Opening MAMP
+
+In normal usage you need to do the following to open MAMP securely:
+
+1) In the `Privileges` app "request privileges" so you are in admin mode
+2) Open `MAMP Pro` 
+4) In the `Privileges` app "remove privileges" so you are in standard mode
 
 ## Local SSL
 
