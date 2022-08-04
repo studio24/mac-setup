@@ -39,6 +39,7 @@ Install following software via Homebrew. Please install packages from Homebrew o
 ```bash
 brew install --cask iterm2
 brew install --cask phpstorm
+brew install --cask tuple
 brew install openssl
 brew install wget
 brew install node
