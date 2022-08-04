@@ -8,6 +8,9 @@ Create Sites folder:
 mkdir ~/Sites
 ```
 
+You should clone all projects into this folder, using SSH to clone from GitHub since this uses SSH keys to authenticate 
+with GitHub. As an example, to clone this repo you'd use: `git clone git@github.com:studio24/mac-setup.git`
+
 ## MAMP Pro
 
 We find MAMP works well for us as a local development environment. If you have advanced requirements we can also use 
