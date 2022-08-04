@@ -1,5 +1,8 @@
-# VPN - SonicWall Mobile Connect
-VPN connectivity software to the office network. This is essential for deployments and access to some IP protected websites (e.g. staging sites). This requires the Support team creating your user on the Sonicwall firewall.
+# Accessing VPN
+
+We use SonicWall Mobile Connect for VPN connectivity software to the office network. This is essential for deployments 
+and access to some IP protected websites (e.g. staging sites). This requires the Support team creating your user on the 
+Sonicwall firewall.
 
 Please note the VPN software won't work if you are in the office (since you're already on the office network).
 

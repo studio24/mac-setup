@@ -4,10 +4,24 @@ Standard Mac setup for the team at Studio 24.
 
 ## How to setup your Mac
 
-* [Setup your Mac](mac-setup.md) - for everyone
-* [Development setup](development-setup.md) - for developers
-* [Support setup](support-setup.md) - for the support team
-* [VPN](vpn.md) - for accessing the company VPN
+### For everyone
+
+* [Mac setup for all staff](mac-setup.md)
+* [Telephone setup](telephone.md)
+* [Accessing VPN](vpn.md)
+
+### For the design team
+
+* [Design Team setup](design-team.md)
+
+### For the dev team
+
+* [Dev Team setup](dev-team.md)
+* [Local development environment](local-development.md)
+ 
+### For the support team
+
+* [Support Team setup](support-team.md) 
 
 ## Getting help
 

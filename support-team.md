@@ -1,4 +1,4 @@
-# Support team setup
+# Support Team setup
 
 ## Terminal
 
