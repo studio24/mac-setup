@@ -195,13 +195,13 @@ For developers:
 
 **Note:** Macbooks running the M1 chip do not require a firrmware password as they have an additonal process built in to replace it. 
 
-## 7) For developers
+## 7) Further setup
 
-Please follow the [dev team setup guide](dev-team.md).
+Different team members have further setup instructions:
 
-## 8) For designers
-
-Please follow the [design team setup guide](design-team.md).
+* [Dev team setup guide](dev-team.md)
+* [Design team setup guide](design-team.md)
+* [Support team setup guide](support-team.md)
 
 ## Things to note
 
