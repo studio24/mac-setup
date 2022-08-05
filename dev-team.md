@@ -56,7 +56,7 @@ This installs the following CLI commands:
 * `python3` and `pip3` for Python 3  
 * `wget` - tool to download files
 
-### iTerm 
+## iTerm 
 
 iTerm is a better terminal for the Mac.
 
@@ -64,7 +64,7 @@ iTerm is a better terminal for the Mac.
 brew install --cask iterm2
 ```
 
-#### Oh My Zsh
+### Oh My Zsh
 
 We use Oh My Zsh to customise your terminal, install via:
 
@@ -103,7 +103,8 @@ plugins=(
 
 Close and re-open iTerm to enable the new plugins.
 
-You can also install different [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) if you wish. the team prefer the 
+#### Zsh Theme
+You can also use different [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) if you wish. The team prefer the 
 `agnoster` theme, which you need to install a Powerline font to use. You can do this via:
 
 ```
@@ -114,9 +115,15 @@ cd ../
 rm -Rf fonts
 ```
 
+Update your `~/.zshrc` file:
+
+```
+ZSH_THEME="agnoster"
+```
+
 You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
 
-### PHPStorm
+## PHPStorm
 
 When you setup PHPStorm install the following plugins:
 
@@ -127,7 +134,7 @@ When you setup PHPStorm install the following plugins:
 
 Login to your JetBrains account to activate.
 
-### Optional software
+## Optional software
 
 Optional, install these if you want to use them:
 
