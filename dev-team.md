@@ -201,10 +201,15 @@ Host github.com
 We use a global [gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) file to ignore IDE and OS files we don't want to commit to git. Any project files you want
 to exclude from git must be added to the project `.gitignore` file. 
 
-Install the global .gitignore file via:
+Download the global .gitignore file via:
 
-```bash
+```
 curl https://raw.githubusercontent.com/studio24/mac-setup/main/global-gitignore/.gitignore > ~/.gitignore 
+```
+
+And tell Git to use it via:
+
+```
 git config --global core.excludesfile ~/.gitignore
 ```
 
