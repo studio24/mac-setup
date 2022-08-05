@@ -66,13 +66,11 @@ brew install --cask iterm2
 
 ### Oh My Zsh
 
-We use Oh My Zsh to customise your terminal, install via:
+We use [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) to customise your terminal, install via:
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
-
-Also see https://github.com/ohmyzsh/ohmyzsh/wiki
 
 We use two plugins:
 
@@ -103,7 +101,7 @@ plugins=(
 
 Close and re-open iTerm to enable the new plugins.
 
-#### Zsh Theme
+#### Theme
 You can also use different [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) if you wish. The team prefer the 
 `agnoster` theme, which you need to install a Powerline font to use. You can do this via:
 
