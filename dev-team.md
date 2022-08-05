@@ -204,7 +204,7 @@ to exclude from git must be added to the project `.gitignore` file.
 Install the global .gitignore file via:
 
 ```bash
-curl https://raw.github.com/studio24/mac-setup/blob/main/global-gitignore/.gitignore > ~/.gitignore 
+curl https://raw.githubusercontent.com/studio24/mac-setup/main/global-gitignore/.gitignore > ~/.gitignore 
 git config --global core.excludesfile ~/.gitignore
 ```
 
