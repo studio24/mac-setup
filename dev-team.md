@@ -29,7 +29,6 @@ brew cleanup
 Install following software via Homebrew. Please install packages from Homebrew one-by-one, since they may include setup instructions (e.g. for NVM):
 
 ```bash
-brew install --cask iterm2
 brew install --cask phpstorm
 brew install --cask tuple
 brew install --cask github
@@ -56,6 +55,66 @@ This installs the following CLI commands:
 * `nvm` - Node Version Manager
 * `python3` and `pip3` for Python 3  
 * `wget` - tool to download files
+
+### iTerm 
+
+iTerm is a better terminal for the Mac.
+
+```
+brew install --cask iterm2
+```
+
+#### Oh My Zsh
+
+We use Oh My Zsh to customise your terminal, install via:
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Also see https://github.com/ohmyzsh/ohmyzsh/wiki
+
+We use two plugins:
+
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+Install these via:
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Edit your `~/.zshrc` file:
+
+```
+nano ~/.zshrc
+```
+
+Add the plugins to the list of plugins for Oh My Zsh to load:
+
+```
+plugins=( 
+    # other plugins...
+    zsh-syntax-highlighting zsh-autosuggestions
+)
+```
+
+Close and re-open iTerm to enable the new plugins.
+
+You can also install different [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) if you wish. the team prefer the 
+`agnoster` theme, which you need to install a Powerline font to use. You can do this via:
+
+```
+git clone --depth 1 git@github.com:powerline/fonts.git ~/fonts
+cd ~/fonts
+./install.sh
+cd ../
+rm -Rf fonts
+```
+
+You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
 
 ### PHPStorm
 
