@@ -196,19 +196,48 @@ Host github.com
  Port 443
 ```
 
-## SSH keys for deployment
+### Global Git ignore file
+
+We use a global [gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) file to ignore IDE and OS files we don't want to commit to git. Any project files you want
+to exclude from git must be added to the project `.gitignore` file. 
+
+Install the global .gitignore file via:
+
+```bash
+curl https://raw.github.com/studio24/mac-setup/blob/main/global-gitignore/.gitignore > ~/.gitignore 
+git config --global core.excludesfile ~/.gitignore
+```
+
+## SSH
+
+Whenever you need to connect to a remote server please make sure you are on the [VPN](vpn.md).
+
+### SSH keys for deployment
 Developers need to add your SSH key to [Studio 24 dev SSH keys repo](https://github.com/studio24/ssh-keys). This will give you permission to deploy websites. Please note these SSH keys are updated every half an hour on servers.
 
 **Important note:** always use SSH (secure shell) when cloning a git repo, not HTTPS.
 
-### Install global .gitignore file
+### SSH aliases
 
-```bash
-curl https://gist.githubusercontent.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7/raw/b78800019c9c0dfdd0f815edacc06fc37e02bad3/.gitignore > ~/.gitignore 
-git config --global core.excludesfile ~/.gitignore
+We use a shared [ssh-config](https://github.com/studio24/ssh-config) file to help accessing remote servers.
+
+Install this via:
+
+```
+git clone git@github.com:studio24/ssh-config.git ~/.ssh/ssh-config
 ```
 
-See https://gist.github.com/simonrjones/b20e06dfed3b52c8c17b74cda74bcaa7
+Update your `~/.ssh/config` file:
+
+```
+Include ssh-config/*.conf
+```
+
+You can test this by outputting all host shortcuts:
+
+```
+~/.ssh/ssh-config/bin/show_hosts
+```
 
 ## Privileges
 

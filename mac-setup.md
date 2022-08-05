@@ -17,15 +17,14 @@ All Mac systems are automatically added to this process when purchased from Appl
 
 * Boot up the new machine
 * Select you location/region
-* Connect to wi-fi (if you in the office please ask a team member to help you with the login credentials)
+* Connect to Wi-Fi 
+    * If you are in the office, connect to `CMILL-Tenant` (ask a team member to help with login credentials, see 1Password under "S24 Staff WiFi - Chesterton Mill")
 * Confirm Addigy/Studio 24 management
 * Add the user a standard account (username should be in the format initial + last name, i.e. _sjones_)
 * Setup Touch ID
 * Choose your look light/dark
 * Choose True Tone display yes/no
 * Enable Location Services to set Date/Time 
-
-If you are in the office you can connect to "CMILL-Tenant" Wi-Fi (details in 1Password under "S24 Staff WiFi - Chesterton Mill").
 
 ## 2) Automatically downloading software
 
@@ -112,7 +111,7 @@ You can read about [getting started with Slack](https://slack.com/intl/en-gb/hel
 
 ## 4) Default admin user
 
-To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user. You can read further information on using the [admin user account](https://github.com/studio24/handbook-it/blob/Updated-mac-setup/it-guidelines/user-accounts.md).
+To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user. 
 
 At the earliest opportunity, request that the support team create a temporary password for the default admin user. 
 
@@ -141,6 +140,14 @@ Other software you'll need to create accounts for include the following. Invitat
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
 * [VPN - SonicWall Mobile Connect](vpn.md) 
 * [Telephone system - 3CX](telephone.md)
+
+### Finder
+
+We recommend you fo the following to make Finder more useful:
+
+* Finder preferences > Sidebar > Show Hard discs, Show my user home folder
+* Finder preferences > Advanced > Show all filename extensions
+* Finder > Show view options > Sort by snap to grid
 
 ### ESET endpoint security
 
@@ -190,12 +197,11 @@ For developers:
 
 ## 7) For developers
 
-Please also follow the [development setup guide](dev-team.md).
+Please follow the [dev team setup guide](dev-team.md).
 
 ## 8) For designers
 
-* [Figma](https://www.figma.com/)
-* [Sketch](https://www.sketch.com/)
+Please follow the [design team setup guide](design-team.md).
 
 ## Things to note
 
