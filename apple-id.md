@@ -4,7 +4,7 @@ Apple IDs are a requirement for Apple Mac support.
 
 ## Setting up your Apple ID
 
-You will receive an invitation via email containing: 
+If you don't already have an Apple ID using your Studio 24 email, you will receive an invitation via email containing: 
 
 * Your managed Apple ID eg: user@studio24.net
 * Your temporary password
