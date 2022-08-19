@@ -1,11 +1,15 @@
 # Apple ID
-Apple IDs are a requirement for Macbook support. 
-## Installation
+
+Apple IDs are a requirement for Apple Mac support. 
+
+## Setting up your Apple ID
+
 You will receive an invitation via email containing: 
 
-Your managed Apple ID eg: user@studio24.net.  
-Your temporary password
+* Your managed Apple ID eg: user@studio24.net
+* Your temporary password
 
+You should then reset your password:
 
 * Click the link in the email or visit the URL [Apple Business Manager](https://business.apple.com)
 * Enter your Apple ID
@@ -16,13 +20,11 @@ Your temporary password
 * Store the new password in your private vault in 1Password
 * Verify your email
 
-Once the Apple ID is setup, add it to your Macbook
-* Open System Preferences
-* Open Internet Accounts
-* Select iCloud
-* Enter your Apple ID, then select Next
-* Enter your password, then select Next
-* Enter the verification code
-* Enter your Mac login password
-* Select any required apps for iCloud to sync
+## Login to your Mac with your Apple ID
 
+Once the Apple ID is setup, login with it on your Mac:
+
+* Open System Preferences
+* Go to Internet Accounts > iCloud
+* Login with your Apple ID and password
+* Select any required apps for iCloud to sync
