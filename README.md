@@ -9,6 +9,7 @@ Standard Mac setup for the team at Studio 24.
 * [Mac setup for all staff](mac-setup.md)
 * [Telephone setup](telephone.md)
 * [Accessing VPN](vpn.md)
+* [Apple ID](apple-id.md)
 
 ### For the design team
 
