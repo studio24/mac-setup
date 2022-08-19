@@ -6,7 +6,7 @@ The following is our standard Mac setup for all staff. The support team are on h
 
 This process uses the following platforms to manage automated deployment:
 
-* [Apple Business Manager](https://business.apple.com/) is the central portal for setting up and managing Mac computers and other devices for Studio 24 and any App Store software licences.
+* [Apple Business Manager](https://business.apple.com/) is the central portal for setting up and managing Mac computers, Apple IDs and other devices for Studio 24 and any App Store software licences.
 * [Addigy](https://prod.addigy.com/) manages the policies used for deploying common settings and software to Studio 24 computers. It also allows for centralised reporting, management and software deployment.
 
 ### Automated device setup
@@ -140,6 +140,7 @@ Other software you'll need to create accounts for include the following. Invitat
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
 * [VPN - SonicWall Mobile Connect](vpn.md) 
 * [Telephone system - 3CX](telephone.md)
+* [Apple ID](appleid.md) - when you receive an email invitation
 
 ### Finder
 
@@ -188,6 +189,12 @@ These commands are carried out within the [Addigy portal](https://prod.addigy.co
 * Setup Device Name via device facts
 * Setup asset tag
 * Setup Finder & firmware password via 'Script' deployment
+
+This is carried out within the [Apple Business Manager portal](https://business.apple.com/):
+
+* Setup a new Apple ID as user@studio24.net
+* Select 'Create Sgn-in'
+* Select sending the new Sign-in via email
 
 For developers:
 
