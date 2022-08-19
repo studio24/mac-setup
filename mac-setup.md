@@ -140,7 +140,7 @@ Other software you'll need to create accounts for include the following. Invitat
 * Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
 * [VPN - SonicWall Mobile Connect](vpn.md) 
 * [Telephone system - 3CX](telephone.md)
-* [Apple ID](appleid.md) - when you receive an email invitation
+* [Apple ID](apple-id.md) - when you receive an email invitation
 
 ### Finder
 

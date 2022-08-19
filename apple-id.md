@@ -1,9 +1,10 @@
 # Apple ID
 Apple IDs are a requirement for Macbook support. 
 ## Installation
-You will receive an invitation via email containing 
-* Your managed Apple ID eg: user@studio24.net.
-* Your temporary password
+You will receive an invitation via email containing: 
+
+Your managed Apple ID eg: user@studio24.net.  
+Your temporary password
 
 
 * Click the link in the email or visit the URL [Apple Business Manager](https://business.apple.com)
@@ -23,5 +24,5 @@ Once the Apple ID is setup, add it to your Macbook
 * Enter your password, then select Next
 * Enter the verification code
 * Enter your Mac login password
-* Select the following apps for iCloud to sync Notes
+* Select any required apps for iCloud to sync
 
