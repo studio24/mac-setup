@@ -193,7 +193,7 @@ These commands are carried out within the [Addigy portal](https://prod.addigy.co
 This is carried out within the [Apple Business Manager portal](https://business.apple.com/):
 
 * Setup a new Apple ID as user@studio24.net
-* Select 'Create Sgn-in'
+* Select 'Create Sign-in'
 * Select sending the new Sign-in via email
 
 For developers:
