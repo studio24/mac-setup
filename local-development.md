@@ -148,6 +148,14 @@ You can access MySQL locally via Sequel Ace.
 
 When creating new databases it's recommended to select the encoding: `UTF-8 Unicode (utf8mb4)`
 
+### Using MySQL on the command line
+
+Edit your `~/.zshrc` file:
+
+```
+export PATH="/Applications/MAMP/Library/bin:${PATH}"
+```
+
 ### Migrating Sequel Ace connections
 If you want to migrate all of your Sequel Ace DB connections from your old Mac, do the following:
 
