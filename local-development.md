@@ -99,12 +99,14 @@ PHP versioning is managed via MAMP Pro.
 
 In MAMP in the "PHP" section:
 
+* Click the "+" next to the PHP version and install an 8.1.* version of PHP so you have this available
 * Tick "Activate command line shortcuts for the selected PHP version"
 * Tick "Also activate shortcut for Composer"
+* Under "What to log" ensure "All errors and warnings (E_ALL)" is selected
 * Under "Log errors" tick "to screen" to output local errors to screen
 * Select "Save" to restart services
 
-This installs the following CLI commands (for your current version of PHP):
+This makes the following CLI commands available (for your current version of PHP):
 
 * `composer` - PHP package manager
 * `php` 
@@ -123,6 +125,8 @@ source ~/.profile
 If you want a version not listed, you can install other PHP versions in MAMP.
 
 ## MySQL
+
+Please note MAMP uses MySQL 5.7, if you require a more modern version you will need to use Docker.
 
 ### Setup
 
@@ -147,6 +151,18 @@ You can access MySQL locally via Sequel Ace.
 * Test the connection to ensure this works
 
 When creating new databases it's recommended to select the encoding: `UTF-8 Unicode (utf8mb4)`
+
+### Using MySQL on the command line
+
+Edit your `~/.zshrc` file:
+
+```
+export PATH="/Applications/MAMP/Library/bin:${PATH}"
+```
+
+This makes the following CLI commands available:
+
+* `mysql` and other [MySQL utilities](https://dev.mysql.com/doc/refman/5.7/en/programs-client.html)
 
 ### Migrating Sequel Ace connections
 If you want to migrate all of your Sequel Ace DB connections from your old Mac, do the following:
