@@ -252,3 +252,15 @@ You can now toggle privileges in the dock at any time. Make sure you toggle priv
 ## Local development environment
 
 See [Local development environment](local-development.md)
+
+## Things to note
+
+### nvm
+If you have issues running nvm make sure it's in your path. Edit your `~/.zshrc` file:
+
+```
+export NVM_DIR="$HOME/.nvm"
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+```
+  
