@@ -44,6 +44,7 @@ brew install wp-cli
 brew install pyenv
 brew install awscli
 brew install nano
+brew install goaccess
 ```
 
 This installs the following CLI commands:
@@ -55,6 +56,7 @@ This installs the following CLI commands:
 * `nvm` - Node Version Manager
 * `python3` and `pip3` for Python 3  
 * `wget` - tool to download files
+* `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
 
 ## iTerm 
 
