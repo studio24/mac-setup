@@ -2,6 +2,14 @@
 
 Standard Mac setup for developers at Studio 24.
 
+## Command Line Tools
+
+You may need to re-install these when upgrading to a new OS version (you need to run this after upgrading to macOS Ventura). Toggle privileges (so you have admin rights) and run the following in terminal:
+
+```
+xcode-select --install
+```
+
 ## Homebrew
 
 [Install Homebrew](https://brew.sh)
