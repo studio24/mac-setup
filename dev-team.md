@@ -41,6 +41,7 @@ brew install --cask phpstorm
 brew install --cask tuple
 brew install --cask github
 brew install --cask imageoptim
+brew install --cask 1password/tap/1password-cli
 brew install openssl
 brew install wget
 brew install node
@@ -53,17 +54,21 @@ brew install pyenv
 brew install awscli
 brew install nano
 brew install goaccess
+brew install symfony-cli/tap/symfony-cli
 ```
 
 This installs the following CLI commands:
 
-* `aws` - AWS CLI
+* `aws` - [AWS CLI](https://aws.amazon.com/cli/)
 * `dep` - Deployer (note: most modern projects use local Deployer loaded via Composer)
 * `nano` - Simple text editor
 * `npm` - Node Package Manager
 * `nvm` - Node Version Manager
+* `op` - [1Password CLI](https://developer.1password.com/docs/cli)
 * `python3` and `pip3` for Python 3  
+* `symfony` - [Symfony CLI](https://symfony.com/download)
 * `wget` - tool to download files
+* `wp` - [WP CLI](https://wp-cli.org/)
 * `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
 
 ## iTerm 
