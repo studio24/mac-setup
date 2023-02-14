@@ -211,6 +211,10 @@ Host github.com
  Port 443
 ```
 
+### Studio 24 team
+
+In order to access private repos and push code to any repos you need to be a member of the [Studio 24 team](https://github.com/orgs/studio24/teams/dev-team/members). Request this from the Support Team.
+
 ### Global Git ignore file
 
 We use a global [gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) file to ignore IDE and OS files we don't want to commit to git. Any project files you want
