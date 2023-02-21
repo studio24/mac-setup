@@ -48,7 +48,6 @@ brew install node
 brew install nvm
 brew install ruby
 brew install python
-brew install deployer
 brew install wp-cli
 brew install pyenv
 brew install awscli
@@ -135,6 +134,18 @@ ZSH_THEME="agnoster"
 ```
 
 You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
+
+## Deployer 6
+
+We use Composer to load Deployer for all new projects, this means your deployment commands should use `./vendor/bin/dep` to run Deployer.
+
+For older projects that still use Deployer 6, you can install Deployer globally using the instructions below. Please note this will only work with PHP 7.2+ or 8.0 (you need to use Deployer 7 for PHP 8.1+).
+
+```
+curl -LO https://deployer.org/releases/v6.9.0/deployer.phar 
+sudo mv deployer.phar /usr/local/bin/dep
+chmod +x /usr/local/bin/dep
+```
 
 ## PHPStorm
 
