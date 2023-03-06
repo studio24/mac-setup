@@ -59,7 +59,6 @@ brew install symfony-cli/tap/symfony-cli
 This installs the following CLI commands:
 
 * `aws` - [AWS CLI](https://aws.amazon.com/cli/)
-* `dep` - Deployer (note: most modern projects use local Deployer loaded via Composer)
 * `nano` - Simple text editor
 * `npm` - Node Package Manager
 * `nvm` - Node Version Manager
