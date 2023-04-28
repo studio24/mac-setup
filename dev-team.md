@@ -193,6 +193,7 @@ User setup:
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email you@example.com
+git config --global pull.ff only
 ```
 
 Create a secure SSH key with a password. Store your SSH key password in your personal private vault in 1Password.
@@ -219,6 +220,20 @@ If this doesn't work, add the following to `~/.ssh/config`:
 Host github.com
  Hostname ssh.github.com
  Port 443
+```
+
+### Default merge strategy
+
+The default merge strategy is fast-forward, if this doesn't work you can create a merge commit:
+
+```
+git pull --no-ff
+```
+
+Or rebase your changes
+
+```
+git pull --rebase
 ```
 
 ### Studio 24 team
