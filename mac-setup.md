@@ -18,7 +18,7 @@ All Mac systems are automatically added to this process when purchased from Appl
 * Boot up the new machine
 * Select you location/region
 * Connect to Wi-Fi 
-    * If you are in the office, connect to `CMILL-Tenant` (ask a team member to help with login credentials, see 1Password under "S24 Staff WiFi - Chesterton Mill")
+    * If you are in the office, connect to `FBC-Tenant` (ask a team member to help with login credentials, see 1Password under "Allia Guildhall Studio 24 WiFi")
 * Confirm Addigy/Studio 24 management
 * Add the user a standard account (username should be in the format initial + last name, i.e. _sjones_)
 * Setup Touch ID
