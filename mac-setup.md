@@ -9,22 +9,17 @@ This process uses the following platforms to manage automated deployment:
 * [Apple Business Manager](https://business.apple.com/) is the central portal for setting up and managing Mac computers, Apple IDs and other devices for Studio 24 and any App Store software licences.
 * [Addigy](https://prod.addigy.com/) manages the policies used for deploying common settings and software to Studio 24 computers. It also allows for centralised reporting, management and software deployment.
 
-### Automated device setup
+### Device setup
 
-All Mac systems are automatically added to this process when purchased from Apple. Other MacOS and iOS systems can be added via serial or order number via the Apple Business Manager. Systems that are auto enrolled to this service will automatically download the agent and deploy according to the policy attached to them.
+All Mac systems purchased via the Apple Business account are automatically added to this process. Other MacOS and iOS systems can be added via serial or order number via the Apple Business Manager. Systems that are auto enrolled to this service will automatically download the agent and deploy according to the policy attached to them. Systems purchased from elsewhere (such as the Applw store) will not be automatically enrolled.
+
+ 
 
 ## 1) Boot up your new Mac
 
-* Boot up the new machine
-* Select you location/region
-* Connect to Wi-Fi 
-    * If you are in the office, connect to `CMILL-Tenant` (ask a team member to help with login credentials, see 1Password under "S24 Staff WiFi - Chesterton Mill")
-* Confirm Addigy/Studio 24 management
-* Add the user a standard account (username should be in the format initial + last name, i.e. _sjones_)
-* Setup Touch ID
-* Choose your look light/dark
-* Choose True Tone display yes/no
-* Enable Location Services to set Date/Time 
+Follow the instructions below aas advised by the support team
+* [Automatic setup](automated-setup.md)
+* [Manual setup](manual-setup.md)
 
 ## 2) Automatically downloading software
 
