@@ -244,7 +244,7 @@ Install this via:
 git clone git@github.com:studio24/ssh-config.git ~/.ssh/ssh-config
 ```
 
-Create a `~/.ssh/config` file and add the following to it. 
+Create a `~/.ssh/config` file and add the following to it:
 
 ```
 Host *

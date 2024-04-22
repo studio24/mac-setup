@@ -99,7 +99,7 @@ PHP versioning is managed via MAMP Pro.
 
 In MAMP in the "PHP" section:
 
-* Click the "+" next to the PHP version and install the PHP version you need to you have it available. MAMP will restart when you install a new version.
+* Click the "+" next to the PHP version and install the PHP version you need to you have it available. MAMP will restart when you install the new version.
 * Tick "Activate command line shortcuts for the selected PHP version"
 * Tick "Also activate shortcut for Composer"
 * Under "What to log" ensure "All errors and warnings (E_ALL)" is selected
