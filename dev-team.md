@@ -134,18 +134,6 @@ ZSH_THEME="agnoster"
 
 You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
 
-## Deployer 6
-
-We use Composer to load Deployer for all new projects, this means your deployment commands should use `./vendor/bin/dep` to run Deployer.
-
-For older projects that still use Deployer 6, you can install Deployer globally using the instructions below. Please note this will only work with PHP 7.2+ or 8.0 (you need to use Deployer 7 for PHP 8.1+).
-
-```
-curl -LO https://deployer.org/releases/v6.9.0/deployer.phar 
-sudo mv deployer.phar /usr/local/bin/dep
-chmod +x /usr/local/bin/dep
-```
-
 ## PHPStorm
 
 When you setup PHPStorm install the following plugins:
@@ -162,7 +150,7 @@ Login to your JetBrains account to activate.
 Optional, install these if you want to use them:
 
 ```bash
-brew install --cask paw
+brew install --cask rapidapi
 brew install --cask textmate
 brew install --cask cyberduck
 brew install --cask visual-studio-code
@@ -256,11 +244,17 @@ Install this via:
 git clone git@github.com:studio24/ssh-config.git ~/.ssh/ssh-config
 ```
 
-Update your `~/.ssh/config` file:
+Create a `~/.ssh/config` file and add the following to it:
 
 ```
+Host *
+	UseKeychain yes
+	IdentityFile ~/.ssh/id_rsa
+
 Include ssh-config/*.conf
 ```
+
+If your ssh key is not called `id_rsa`, use the correct name instead.
 
 You can test this by outputting all host shortcuts:
 
@@ -280,4 +274,4 @@ You can now toggle privileges in the dock at any time. Make sure you toggle priv
 
 ## Local development environment
 
-See [Local development environment](local-development.md)
+To install PHP, Composer and MySQL, see the [Local development environment](local-development.md) document.

@@ -35,7 +35,6 @@ All of the major software is installed (and updated) automatically by Addigy in 
 * Microsoft Teams (online meetings)
 * Microsoft To Do (todo app)
 * Mozilla Firefox (web browser)
-* Sequel Ace (database tool)
 * Slack (team chat)
 * SonicWall Mobile Connect (VPN)
 * Tick (time tracking)

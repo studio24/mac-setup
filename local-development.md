@@ -85,7 +85,7 @@ cd ~/ssl-certs
 mkcert local.host.dev
 ```
 
-Go into MAMP Pro and update and update your hosts entry to use the new certificate. Under the SSL tab set:
+Go into MAMP Pro and update your hosts entry to use the new certificate. Under the SSL tab set:
 
 * Certificate file: file ending `*.pem`, e.g. `~/ssl-certs/local.host.dev.pem`
 * Cerfificate key file: file ending `*-key.pm`, e.g. `~/ssl-certs/local.host.dev-key.pem`
@@ -99,7 +99,7 @@ PHP versioning is managed via MAMP Pro.
 
 In MAMP in the "PHP" section:
 
-* Click the "+" next to the PHP version and install an 8.1.* version of PHP so you have this available
+* Click the "+" next to the PHP version and install the PHP version you need to you have it available. MAMP will restart when you install the new version.
 * Tick "Activate command line shortcuts for the selected PHP version"
 * Tick "Also activate shortcut for Composer"
 * Under "What to log" ensure "All errors and warnings (E_ALL)" is selected
@@ -143,7 +143,7 @@ Please note you should be able to set the MySQL connection password for projects
 
 ### Accessing MySQL
 
-You can access MySQL locally via Sequel Ace.
+You can access MySQL locally via Table Plus.
 
 * Host: `127.0.0.1`
 * Username: `root`
@@ -175,3 +175,9 @@ If you want to migrate all of your Sequel Ace DB connections from your old Mac, 
 * Import on new Macbook
 
 **Note:** You will need to re-attach any SSH keys when accessing MySQL over SSH.
+
+### Migrating from Sequal Ace to TablePlus
+As of April 2024 [we are migrating away](https://3.basecamp.com/3091560/buckets/10590409/documents/7260701423) from using Sequel Ace to TablePlus for connecting to databases.
+
+You will need to download the latest version of TablePlus from the [TablePlus website](https://tableplus.com/download), and follow the instructions in the Basecamp message.
+
