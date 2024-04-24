@@ -34,7 +34,7 @@ It is also recommended to have the project checked out in your local `~/Sites` f
 
 1) Select "Add Host"
 2) Select "Empty"
-3) Enter your local website URL
+3) Enter your local website URL. We use the `local` subdomain for local sites with the same TLD as the production URL, e.g. `local.studio24.net`.
 4) Choose your local document root, this is normally `public` or `web`
 6) Select "Create host"
 7) Select "Save" and restart MAMP services
