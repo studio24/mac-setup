@@ -1,6 +1,6 @@
 # Local development environment setup
 
-> [!IMPORTANT]  
+> [!NOTE]  
 > Please note we no longer use MAMP for local development and have moved to DDEV.
 
 ## Terminal
@@ -138,30 +138,28 @@ ddev export-db
 
 ### Xdebug
 
-Xdebug comes with it by default, so just run:
+Xdebug comes with it by default. To enable Xdebug run:
 
 ```shell
 ddev xdebug on
 ```
 
-to enable it,
+To disable Xdebug:
 
 ```shell
 ddev xdebug off
 ```
 
-to disable, and
+To toggle Xdebug on and off:
 
 ```shell
 ddev xdebug toggle
 ```
 
-to toggle it.
-
 Read instructions on [how to setup Xdebug in PHPstorm and VSCode](https://ddev.readthedocs.io/en/stable/users/debugging-profiling/step-debugging/).
 
 ### Running commands in DDEV
-All commands must be run via ddev, for example:
+All commands must be run via ddev to ensure you are using the correct version of PHP. For example:
 
 ```shell
 ddev composer install
@@ -169,10 +167,11 @@ ddev composer install
 
 Some [useful commands](https://ddev.readthedocs.io/en/stable/users/usage/cli/#lots-of-other-commands) from the DDEV docs:
 
+* `ddev composer` gives access to Composer
 * `ddev artisan` (Laravel only) gives direct access to the Laravel artisan CLI
-* `ddev console` (Symfony only) gives access to the symfony console CLI
-* `ddev craft` (Craft CMS only) gives access to the craft CLI
+* `ddev console` (Symfony only) gives access to the Symfony console CLI
+* `ddev craft` (Craft CMS only) gives access to the Craft CLI
 * `ddev npm` gives direct access to the npm CLI
 * `ddev wp` (WordPress) give direct access to the WP CLI
-* `ddev ssh` takes you into the web container.
-* `ddev exec [command]` executes a command inside the web container.
+* `ddev ssh` takes you into the web container
+* `ddev exec [command]` executes a command inside the web container
