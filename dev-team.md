@@ -32,13 +32,38 @@ brew upgrade
 brew cleanup
 ```  
 
+## PHP
+
+_Note to Alan - do we need to install PHP? I don't believe it comes as standard. If so here's some sample instructions that need testing on a fresh machine..._
+
+Install the latest stable version of PHP:
+
+```shell
+brew install php
+brew install composer
+brew install symfony-cli/tap/symfony-cli
+brew install wp-cli
+```
+Laravel installer:
+
+```shell
+composer global require laravel/installer
+```
+
+This installs the following CLI commands:
+
+* `php` - [PHP](https://www.php.net/manual/en/features.commandline.php)
+* `composer` - [Composer](https://getcomposer.org/doc/)
+* `laravel` - [Laravel CLI](https://laravel.com/docs/12.x)
+* `symfony` - [Symfony CLI](https://symfony.com/doc/current/setup.html)
+* `wp`- [WP-CLI](https://developer.wordpress.org/cli/commands/)
+
 ## Software packages
 
 Install following software via Homebrew. Please install packages from Homebrew one-by-one, since they may include setup instructions (e.g. for NVM):
 
 ```bash
 brew install --cask phpstorm
-brew install --cask tuple
 brew install --cask github
 brew install --cask imageoptim
 brew install --cask 1password/tap/1password-cli
@@ -48,12 +73,10 @@ brew install node
 brew install nvm
 brew install ruby
 brew install python
-brew install wp-cli
 brew install pyenv
 brew install awscli
 brew install nano
 brew install goaccess
-brew install symfony-cli/tap/symfony-cli
 ```
 
 This installs the following CLI commands:
@@ -64,9 +87,7 @@ This installs the following CLI commands:
 * `nvm` - Node Version Manager
 * `op` - [1Password CLI](https://developer.1password.com/docs/cli)
 * `python3` and `pip3` for Python 3  
-* `symfony` - [Symfony CLI](https://symfony.com/download)
 * `wget` - tool to download files
-* `wp` - [WP CLI](https://wp-cli.org/)
 * `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
 
 ## iTerm 
@@ -136,14 +157,13 @@ You then need to select a Powerline font in iTerm (Preferences > Profile > Text)
 
 ## PHPStorm
 
-When you setup PHPStorm install the following plugins:
+When you setup PHPStorm install the following plugins (Settings > Plugins):
 
 * .env files support
-* EditorConfig
-* Symfony 
-* Laravel
+* Laravel Idea (we have commercial license for this)
+* Symfony Support
 
-Login to your JetBrains account to activate.
+Login to your JetBrains account to activate commercial plugins.
 
 ## Optional software
 
@@ -282,16 +302,6 @@ You can test this by outputting all host shortcuts:
 ~/.ssh/ssh-config/bin/show_hosts
 ```
 
-## Privileges
-
-You can use the privileges app to temporarily act as an admin user, you'll need to do this to start MAMP Pro.
-
-* Open "Privileges" app
-* Right-click the icon and select Options > Keep in Dock
-* Select "request privileges" to setup this up for the first time
-
-You can now toggle privileges in the dock at any time. Make sure you toggle privileges to open MAMP, you must toggle privileges back after MAMP has opened.
-
 ## Local development environment
 
-To install PHP, Composer and MySQL, see the [Local development environment](local-development.md) document.
+To install a local development environment, see the [Local development environment](local-development.md) document.
