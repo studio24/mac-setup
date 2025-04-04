@@ -1,6 +1,7 @@
 # Manual device setup
 
-Systems purchased from elsewhere (such as the Apple store) will not be automatically enrolled.
+Systems purchased from elsewhere will not be automatically enrolled, but can be added via the process below. 
+Please be aware that with Mac OS releases some of the introductory screens may vary. If in doubt please check with the Support team.
 
 ## 1) Boot up your new Mac
 
