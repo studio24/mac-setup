@@ -11,17 +11,51 @@ This process uses the following platforms to manage automated deployment:
 
 ### Device setup
 
-All Mac systems purchased via the Apple Business account are automatically added to this process. Other MacOS and iOS systems can be added via serial or order number via the Apple Business Manager. Systems that are auto enrolled to this service will automatically download the agent and deploy according to the policy attached to them. Systems purchased from elsewhere (such as the Applw store) will not be automatically enrolled.
+All Mac systems purchased via the Apple Business account are automatically added to this process. Other MacOS and iOS systems can be added via serial or order number via the Apple Business Manager. Systems that are auto enrolled to this service will automatically download the agent and deploy according to the policy attached to them. Systems purchased from elsewhere will not be automatically enrolled.
 
- 
+## 1) Initial boot
 
-## 1) Boot up your new Mac
+* Boot up the new machine
+* Select 'Get Started'
+* Select you location/region
+* Select Accessibility option or 'Not now' to setup later
+* Connect to Wi-Fi
+    * If you are in the office, connect to `FBC-Tenant` (ask a team member to help with login credentials, see 1Password under "Allia Guildhall Studio 24 WiFi")
+* Confirm Addigy/Studio 24 management by selecting 'Enrol'
+* Select continue
+* Add the user a standard account (username should be in the format initial + last name, i.e. _sjones_)
+* Enable Location Services to set Date/Time
+* Select continue
+**Note** If prompted please skip Apple Intelligence setup, this will need disabling in System settings. You may need to update your Mac OS before this prompt appears
 
-Follow the instructions below aas advised by the support team
-* [Automatic setup](automated-setup.md)
-* [Manual setup](manual-setup.md)
+## 2) Default admin user
 
-## 2) Automatically downloading software
+To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user.
+
+At the earliest opportunity, request that the support team create a temporary password for the default admin user.
+
+You should then:
+
+1) log in as the user "admin" using this temporary password
+2) Change the password to a new complex password
+3) Store the new admin password in your personal vault in 1Password
+
+You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
+
+* Your email address
+* [Your secret key](https://support.1password.com/secret-key/)
+* Your 1Password account password
+
+If you have an existing computer you can access this via the "Set up another device" page.
+
+If this if your first computer we recommend using your Emergency Kit from 1Password.
+
+## 3) Check for system updates
+* In System Settings check for any Mac OS updates and install them.
+* If prompted please skip Apple Intelligence setup, this will need disabling in System settings. You may need to update your Mac OS before this prompt appears
+* Double check that Apple Intelligence is disabled in system settings
+
+## 4) Automatically downloading software
 
 All of the major software is installed (and updated) automatically by Addigy in the background. Please note, this can take some time and some users have reported it takes up to a day to download all software. You can check progress via [Launchpad](https://support.apple.com/en-us/HT202635) which shows all your apps.
 
@@ -31,22 +65,18 @@ All of the major software is installed (and updated) automatically by Addigy in 
 * Google Chrome (web browser)
 * Google Drive (team shared files)
 * Integrity (link checker)
-* Microsoft Office (Word, Excel, Powerpoint)
-* Microsoft Teams (online meetings)
-* Microsoft To Do (todo app)
 * Mozilla Firefox (web browser)
 * Slack (team chat)
 * SonicWall Mobile Connect (VPN)
 * Tick (time tracking)
-* Zoom (online meetings)
 
 This process also:
 
 * Creates a default admin user (see below for additional actions)
-* Adds office printers
+* Adds office printer
 * Sets up default finder and preferences
 
-## 4) Setting up essential software
+## 5) Setting up essential software
 
 In order to setup software on your Mac you first need email, 1Password and Slack so you can store complex, secure passwords and communicate with the team.
 
@@ -93,7 +123,7 @@ Do not store the emergency kit file on your computer, either move this to your p
 
 You should store passwords in 1Password and not your web browser for security. 
 
-* Safari - Preferences > AutoFill > untick "Usernames and passwords"
+* Safari - Settings > AutoFill > untick "Usernames and passwords"
 * Firefox - Preferences > Privacy & Security > untick "Ask to save logins and passwords for websites"
 * Chrome - Settings > Auto-fill > Passwords > untick "Offer to save passwords"
 
@@ -103,35 +133,14 @@ Once you have email access you should receive an invite to Slack.
 
 You can read about [getting started with Slack](https://slack.com/intl/en-gb/help/articles/218080037-Getting-started-for-new-Slack-users).
 
-## 4) Default admin user
 
-To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user. 
 
-At the earliest opportunity, request that the support team create a temporary password for the default admin user. 
-
-You should then:
-
-1) log in as the user "admin" using this temporary password 
-2) Change the password to a new complex password
-3) Store the new admin password in your personal vault in 1Password
-
-You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
-
-* Your email address
-* [Your secret key](https://support.1password.com/secret-key/)
-* Your 1Password account password
-
-If you have an existing computer you can access this via the "Set up another device" page. 
-
-If this if your first computer we recommend using your Emergency Kit from 1Password.
-
-## 5) Setting up other software 
+## 6) Setting up other software 
 
 Other software you'll need to create accounts for include the following. Invitations to create accounts for software and web-based tools will be sent to your email account. 
 
 * Alfred - if you want to use this open the app to configure it
 * Google Drive - open up the app and sign in
-* Microsoft Office - open up Microsoft Word to sign in to your Microsoft 365 account
 * [VPN - SonicWall Mobile Connect](vpn.md) 
 * [Telephone system - 3CX](telephone.md)
 * [Apple ID](apple-id.md) - when you receive an email invitation
@@ -174,15 +183,15 @@ Tools for PM team and developers:
 * [JIRA](https://studio24.atlassian.net/jira/projects) (task management)
 * [Zendesk](https://studio24.zendesk.com/agent/dashboard) (support system - please note we have issues accessing Zendesk in Firefox)
 
-## 6) Setup steps for Support team
+## 7) Setup steps for Support team
 
-Once a new Mac has passed the intial setup, the support team need to action the following.
+Once a new Mac has passed the initial setup, the support team need to action the following.
 
 These commands are carried out within the [Addigy portal](https://prod.addigy.com):
   
 * Setup Device Name via device facts
 * Setup asset tag
-* Setup Finder & firmware password via 'Script' deployment
+* Setup firmware password via 'Script' deployment
 
 This is carried out within the [Apple Business Manager portal](https://business.apple.com/):
 
@@ -192,24 +201,12 @@ This is carried out within the [Apple Business Manager portal](https://business.
 
 For developers:
 
-* Setup sudo access for your user to install software on the command line
+* Setup sudo access for the user to install software on the command line
 
-**Note:** Macbooks running the M1 chip do not require a firrmware password as they have an additonal process built in to replace it. 
-
-## 7) Further setup
+## 8) Further setup
 
 Different team members have further setup instructions:
 
 * [Dev team setup guide](dev-team.md)
 * [Design team setup guide](design-team.md)
 * [Support team setup guide](support-team.md)
-
-## Things to note
-
-### Gatekeeper
-
-When installing programs if you get a message saying the application _"can't be opened because it is from an unidentified developer"_ this is the macOS Gatekeeper program restricting what can be installed.
-
-To manually override this hold **Ctrl** while opening the application, then will then bring up a dialog box where you can select OK to open the application.
-
-See [https://support.apple.com/en-gb/HT202491](https://support.apple.com/en-gb/HT202491)
