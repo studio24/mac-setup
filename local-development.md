@@ -33,7 +33,7 @@ _Please note if you have Docker Desktop already installed we recommend uninstall
 Installation instructions:
 
 * Login to the [OrbStack website](https://orbstack.dev/) using your GitHub account
-* Download the app and install it to your Mac
+* Install the app via `brew install orbstack`
 * Open OrbStack to configure it
     * Select Docker to use Docker containers
 * Sign in to OrbStack to use the professional license (sign in button bottom-left or Account > Sign in)
