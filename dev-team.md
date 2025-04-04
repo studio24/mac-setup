@@ -73,6 +73,7 @@ brew install awscli
 brew install nano
 brew install goaccess
 brew install tableplus
+brew install 1password-cli
 ```
 
 This installs the following CLI commands:
@@ -85,6 +86,7 @@ This installs the following CLI commands:
 * `python3` and `pip3` for Python 3  
 * `wget` - tool to download files
 * `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
+* 'op' - to use 1Password via the cli (for SSH etc)
 
 ## iTerm 
 
