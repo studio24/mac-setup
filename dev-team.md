@@ -86,7 +86,7 @@ This installs the following CLI commands:
 * `python3` and `pip3` for Python 3  
 * `wget` - tool to download files
 * `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
-* 'op' - to use 1Password via the cli (for SSH etc)
+* `op` - to use 1Password via the cli (for SSH etc)
 
 ## iTerm 
 
@@ -302,3 +302,7 @@ You can test this by outputting all host shortcuts:
 ## Local development environment
 
 To install a local development environment, see the [Local development environment](local-development.md) document.
+
+## Configure 1Password for SSH access
+
+To setup and use 1Password for SSH access to servers, see the [1Password for SSH](1paasword-ssh.md) document.
