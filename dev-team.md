@@ -42,7 +42,6 @@ Install the latest stable version of PHP:
 brew install php
 brew install composer
 brew install symfony-cli/tap/symfony-cli
-brew install wp-cli
 ```
 Laravel installer:
 
@@ -56,7 +55,6 @@ This installs the following CLI commands:
 * `composer` - [Composer](https://getcomposer.org/doc/)
 * `laravel` - [Laravel CLI](https://laravel.com/docs/12.x)
 * `symfony` - [Symfony CLI](https://symfony.com/doc/current/setup.html)
-* `wp`- [WP-CLI](https://developer.wordpress.org/cli/commands/)
 
 ## Software packages
 
@@ -66,17 +64,15 @@ Install following software via Homebrew. Please install packages from Homebrew o
 brew install --cask phpstorm
 brew install --cask github
 brew install --cask imageoptim
-brew install --cask 1password/tap/1password-cli
-brew install openssl
 brew install wget
 brew install node
 brew install nvm
-brew install ruby
 brew install python
 brew install pyenv
 brew install awscli
 brew install nano
 brew install goaccess
+brew install tableplus
 ```
 
 This installs the following CLI commands:
@@ -97,97 +93,6 @@ iTerm is a better terminal for the Mac.
 ```
 brew install --cask iterm2
 ```
-
-### Oh My Zsh
-
-We use [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) to customise your terminal, install via:
-
-```
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-We use two plugins:
-
-* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
-
-Install these via:
-
-```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
-
-Edit your `~/.zshrc` file:
-
-```
-nano ~/.zshrc
-```
-
-Add the plugins to the list of plugins for Oh My Zsh to load:
-
-```
-plugins=( 
-    # other plugins...
-    zsh-syntax-highlighting zsh-autosuggestions
-)
-```
-
-Close and re-open iTerm to enable the new plugins.
-
-#### Theme
-You can also use different [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) if you wish. The team prefer the 
-`agnoster` theme, which you need to install a Powerline font to use. You can do this via:
-
-```
-git clone --depth 1 git@github.com:powerline/fonts.git ~/fonts
-cd ~/fonts
-./install.sh
-cd ../
-rm -Rf fonts
-```
-
-Update your `~/.zshrc` file:
-
-```
-ZSH_THEME="agnoster"
-```
-
-You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
-
-## PHPStorm
-
-When you setup PHPStorm install the following plugins (Settings > Plugins):
-
-* .env files support
-* Laravel Idea (we have commercial license for this)
-* Symfony Support
-
-Login to your JetBrains account to activate commercial plugins.
-
-## Optional software
-
-Optional, install these if you want to use them:
-
-```bash
-brew install --cask rapidapi
-brew install --cask textmate
-brew install --cask cyberduck
-brew install --cask visual-studio-code
-brew install --cask transmit
-brew install --cask sublime-text
-```
-
-Textmate installs the following CLI commands:
-
-* `mate` - CLI command to open text files in Textmate
-
-If you have a license (front-end team):
-
-```
-brew install --cask sketch
-```
-
 ## Git
 
 Set default branch to main:
@@ -263,6 +168,96 @@ And tell Git to use it via:
 
 ```
 git config --global core.excludesfile ~/.gitignore
+```
+
+## Oh My Zsh
+
+We use [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki) to customise your terminal, install via:
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+We use two plugins:
+
+* [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
+* [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh)
+
+Install these via:
+
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+Edit your `~/.zshrc` file:
+
+```
+nano ~/.zshrc
+```
+
+Add the plugins to the list of plugins for Oh My Zsh to load:
+
+```
+plugins=( 
+    # other plugins...
+    zsh-syntax-highlighting zsh-autosuggestions
+)
+```
+
+Close and re-open iTerm to enable the new plugins.
+
+### Theme
+You can also use different [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) if you wish. The team prefer the 
+`agnoster` theme, which you need to install a Powerline font to use. You can do this via:
+
+```
+git clone --depth 1 git@github.com:powerline/fonts.git ~/fonts
+cd ~/fonts
+./install.sh
+cd ../
+rm -Rf fonts
+```
+
+Update your `~/.zshrc` file:
+
+```
+ZSH_THEME="agnoster"
+```
+
+You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
+
+## PHPStorm
+
+When you setup PHPStorm install the following plugins (Settings > Plugins):
+
+* .env files support
+* Laravel Idea (we have commercial license for this)
+* Symfony Support
+
+Login to your JetBrains account to activate commercial plugins.
+
+## Optional software
+
+Optional, install these if you want to use them:
+
+```bash
+brew install --cask rapidapi
+brew install --cask textmate
+brew install --cask cyberduck
+brew install --cask visual-studio-code
+brew install --cask transmit
+brew install --cask sublime-text
+```
+
+Textmate installs the following CLI commands:
+
+* `mate` - CLI command to open text files in Textmate
+
+If you have a license (front-end team):
+
+```
+brew install --cask sketch
 ```
 
 ## SSH
