@@ -1,6 +1,6 @@
 # Apple ID
 
-Apple IDs are a requirement for Apple Mac support. 
+Apple IDs are a requirement for getting support for an Apple Mac. 
 
 ## Setting up your Apple ID
 

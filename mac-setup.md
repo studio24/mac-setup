@@ -13,6 +13,10 @@ This process uses the following platforms to manage automated deployment:
 
 All Mac systems purchased via the Apple Business account are automatically added to this process. Other MacOS and iOS systems can be added via serial or order number via the Apple Business Manager. Systems that are auto enrolled to this service will automatically download the agent and deploy according to the policy attached to them. Systems purchased from elsewhere will not be automatically enrolled.
 
+### Mac boxes
+
+Please keep the Mac box (including the packing box), store this in the Cambridge office if possible. 
+
 ## 1) Initial boot
 
 * Boot up the new machine
