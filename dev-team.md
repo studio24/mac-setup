@@ -305,4 +305,5 @@ To install a local development environment, see the [Local development environme
 
 ## Configure 1Password for SSH access
 
-To setup and use 1Password for SSH access to servers, see the [1Password for SSH](1paasword-ssh.md) document.
+To setup and use 1Password for SSH access to servers, see the [1Password for SSH](1password-ssh.md) document.
+3
