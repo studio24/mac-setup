@@ -2,7 +2,7 @@
 
 Apple IDs are a requirement for getting support for an Apple Mac. 
 
-## Setting up your Apple ID
+## Setting up a new Apple ID
 
 If you don't already have an Apple ID using your Studio 24 email, you will receive an invitation via email containing: 
 
@@ -20,11 +20,12 @@ You should then reset your password:
 * Store the new password in your private vault in 1Password
 * Verify your email
 
-## Login to your Mac with your Apple ID
+## Login to your Mac with your existing Apple ID
 
 Once the Apple ID is setup, login with it on your Mac:
 
 * Open System Preferences
 * Go to Internet Accounts > iCloud
 * Login with your Apple ID and password
+* Enable: Allow Find my Mac to use the location of this Mac
 * Select any required apps for iCloud to sync
