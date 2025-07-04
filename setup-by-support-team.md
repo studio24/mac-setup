@@ -4,7 +4,7 @@ These steps are required by the Support Team to help staff setup their Macs.
 
 Once a new Mac has passed the initial setup, the support team need to action the following.
 
-## everyone
+## Everyone
 These commands are carried out within the [Addigy portal](https://prod.addigy.com):
 
 * [Setup Device Name via device facts](#setup-device-name-via-device-facts)
