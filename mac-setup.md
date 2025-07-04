@@ -38,6 +38,8 @@ To meet our security requirements your normal user does not have admin rights. T
 
 At the earliest opportunity, request that the support team create a temporary password for the default admin user.
 
+At this point the support team will also carry out the other [required tasks](setup-by-support-team.md).
+
 You should then:
 
 1) log in as the user "admin" using this temporary password
@@ -187,27 +189,7 @@ Tools for PM team and developers:
 * [JIRA](https://studio24.atlassian.net/jira/projects) (task management)
 * [Zendesk](https://studio24.zendesk.com/agent/dashboard) (support system - please note we have issues accessing Zendesk in Firefox)
 
-## 7) Setup steps for Support team
-
-Once a new Mac has passed the initial setup, the support team need to action the following.
-
-These commands are carried out within the [Addigy portal](https://prod.addigy.com):
-  
-* Setup Device Name via device facts
-* Setup asset tag
-* Setup firmware password via 'Script' deployment
-
-This is carried out within the [Apple Business Manager portal](https://business.apple.com/):
-
-* Setup a new Apple ID as user@studio24.net
-* Select 'Create Sign-in'
-* Select sending the new Sign-in via email
-
-For developers:
-
-* Setup sudo access for the user to install software on the command line
-
-## 8) Further setup
+## 7) Further setup
 
 Different team members have further setup instructions:
 
