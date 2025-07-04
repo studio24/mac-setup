@@ -4,14 +4,17 @@ These steps are required by the Support Team to help staff setup their Macs.
 
 Once a new Mac has passed the initial setup, the support team need to action the following.
 
-## All users
+## everyone
 These commands are carried out within the [Addigy portal](https://prod.addigy.com):
 
 * [Setup Device Name via device facts](#setup-device-name-via-device-facts)
 * [Setup asset tag](#setup-asset-tag)
-* [Setup firmware password via 'Script' deployment](#Setup-firmware-password-via-script-deployment)
+* [Setup firmware password via 'Script' deployment](#setup-firmware-password-via-script-deployment)
 
-## New users only
+For developers:
+* [Setup sudo access for the user to install software on the command line](#setup-sudo-access---developers-only)
+
+## New staff only
 This is carried out for within the [Apple Business Manager portal](https://business.apple.com/):
 
 * Go to Users
@@ -20,13 +23,9 @@ This is carried out for within the [Apple Business Manager portal](https://busin
 * Select 'Create Sign-in'
 * Select sending the new Sign-in via email
 
-For developers:
-
-* [Setup sudo access for the user to install software on the command line](#setup-sudo-access---developers-only)
-
 ## Addigy setup 
 
-To update these itmes it is best that the Macbook is online
+To update these items it is best that the Macbook is online
 
 ### Setup Device Name via device facts
 * Go to the devices page in the [Addigy portal](https://prod.addigy.com)
