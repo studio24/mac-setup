@@ -34,15 +34,19 @@ brew cleanup
 
 ## PHP
 
-_Note to Alan - do we need to install PHP? I don't believe it comes as standard. If so here's some sample instructions that need testing on a fresh machine..._
-
 Install the latest stable version of PHP:
 
 ```shell
 brew install php
 brew install composer
+```
+
+Symfony installer:
+
+```shell
 brew install symfony-cli/tap/symfony-cli
 ```
+
 Laravel installer:
 
 ```shell
