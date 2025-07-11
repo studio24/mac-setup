@@ -24,13 +24,13 @@ brew doctor
 
 If there are any recommendations, it's worth following them.
 
-Update to latest version
+You can update packages in Homebrew at any time via:
 
 ```bash
-brew update
 brew upgrade
-brew cleanup
 ```  
+
+Homebrew will automatically do this when you install new packages that require updates.
 
 ## PHP
 
@@ -92,6 +92,16 @@ This installs the following CLI commands:
 * `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
 * `op` - to use 1Password via the cli (for SSH etc)
 
+## PhpStorm
+
+> [!NOTE]  
+> The support team will set you up with a JetBrains account based on your studio24.net email address.
+
+1. Open PhpStorm
+2. Activate license
+3. Log in to JetBrains account (this opens a web browser)
+4. Go back to PhpStorm and activate your license
+
 ## iTerm 
 
 iTerm is a better terminal for the Mac.
@@ -115,7 +125,8 @@ git config --global user.email you@example.com
 git config --global pull.ff only
 ```
 
-Create a secure SSH key with a password. Store your SSH key password in your personal private vault in 1Password.
+### SSH key
+Create a secure SSH key with a password. Store your SSH key password in your Employee private vault in 1Password.
 
 See instructions on [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 

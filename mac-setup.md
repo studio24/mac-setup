@@ -67,7 +67,7 @@ All of the major software is installed (and updated) automatically by Addigy in 
 
 This process also:
 
-* Creates a default admin user (see below for additional actions)
+* Creates a default admin user (see [Mac user passwords](#6-mac-user-passwords) for additional actions)
 * Adds office printer
 * Sets up default finder and preferences
 
@@ -99,7 +99,7 @@ You can read about [getting started with 1Password](https://support.1password.co
 
 If you are moving to a new computer and have 1Password set up on your old computer, you can use this to setup 1Password on your new computer.
 
-We recommend you first install Slack and send yourself a 1Password login link via your private Slack channel.
+We recommend you first install [Slack](#slack) and send yourself a 1Password login link via your private Slack channel.
 
 If you sign into Slack for the first time on a new computer, select the "Try entering a workspace URL" option so you can enter your login details.
 
@@ -115,11 +115,12 @@ On your old computer you can then:
 * Go to: _All Accounts > Set Up Another Device_
 * Go to Other options > Get link > Get link
 * Send this to yourself via Slack private direct message
-* Delete the email once complete
+* Delete the Slack message once complete
 
 #### Choosing a good 1Password account password
 
-You will have to remember your 1Password account password, the Support team can reset this for you if required. We recommend using three random words, separated by spaces or hyphens. 
+You will have to remember your 1Password account password, the Support team can reset this for you if required. 
+We recommend using three random words, separated by spaces or hyphens (1Password calls this a "memorable password"). 
 
 #### 1Password browser extensions
 
@@ -127,7 +128,9 @@ You will have to remember your 1Password account password, the Support team can 
 
 #### Password policy
 
-Once you have access to 1Password please ensure you store all your personal logins to your personal vault in 1Password (this is private to you). It is a requirement to set complex, secure passwords for all services. We define complex passwords as a minimum of 15 characters. We also recommend using two-factor authentication (2FA) wherever possible. 
+Once you have access to 1Password please ensure you store all your personal logins to your "Employee" vault in 1Password (this is private to you). 
+It is a requirement to set complex, secure passwords for all services. We define complex passwords as a minimum of 15 characters. 
+We also recommend using two-factor authentication (2FA) wherever possible. 
 
 #### Emergency kit
 
@@ -156,25 +159,23 @@ Once you have email access you should receive an invite to Slack. Existing staff
 
 You can read about [getting started with Slack](https://slack.com/intl/en-gb/help/articles/218080037-Getting-started-for-new-Slack-users).
 
-## 6) Default admin user
+## 6) Mac user passwords
+
+> [!NOTE]  
+> Mac user passwords must be a minimum of 12 characters. We recommend using a memorable password made up of 2-3 words.
 
 To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user.
 
-You should:
+It's important to reset your admin password and store this in 1Password.
 
-1) log in as the user "admin" using this temporary password
-2) Change the password to a new complex password (System Settings > Users & Groups > Password reset)
-3) Store the new admin password in your personal vault in 1Password
+1) Open System Settings > Users & Groups 
+2) Select the "admin" user "i" icon
+3) Select "Reset" next to Password
+4) You'll need to enter your admin login details to authorise this
+5) You can then enter your new password
+3) Store the new admin password in your Studio 24 employee vault in 1Password (this is your personal, private vault)
 
-You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
-
-* Your email address
-* [Your secret key](https://support.1password.com/secret-key/)
-* Your 1Password account password
-
-If you have an existing computer you can access this via the "Set up another device" page.
-
-If this if your first computer we recommend using your Emergency Kit from 1Password.
+You should also reset your password for your normal Mac user. Follow the same steps as above but for your normal Mac user.
 
 ## 7) Setting up other software 
 
@@ -230,7 +231,7 @@ Once logged in as an admin user:
 
 Web-based tools you'll need to create accounts for are:
 
-* [Basecamp](https://3.basecamp.com/3091560/) (project management)
+* [Basecamp](https://3.basecamp.com/3091560/) (project management) 
 * [Google](https://myaccount.google.com/) 
    * Access [Google Drive shared drives](https://drive.google.com/drive/shared-drives) or via your Finder
    * Access [Google Meet](https://meet.google.com/)
