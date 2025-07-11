@@ -4,7 +4,8 @@ We use SonicWall Mobile Connect for VPN connectivity software to the office netw
 and access to some IP protected websites (e.g. staging sites). This requires the Support team creating your user on the 
 Sonicwall firewall.
 
-Please note the VPN software won't work if you are in the office (since you're already on the office network).
+> [!IMPORTANT]  
+> Please note the VPN software won't work if you are in the office (since you're already on the office network).
 
 ## Installation
 This is installed by default to all devices via Addigy as part of the initial Mac setup. 
