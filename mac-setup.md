@@ -33,31 +33,15 @@ Please keep the Mac box (including the packing box) and store this in the Cambri
 **Note** If prompted please skip Apple Intelligence setup, this will need disabling in System settings. You may need to update your Mac OS before this prompt appears
 * If your Mac has Touch ID you can set this up in System Settings > Touch ID & Password.
 
-## 2) Default admin user
+## 2) Support team setup
 
-To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user.
-
-At the earliest opportunity, request that the support team create a temporary password for the default admin user.
+At the earliest opportunity, request that the support team create a temporary password for the default admin user. 
+You will reset the admin password later on, once you have access to 1Password.
 
 At this point the support team will also carry out the other [required tasks](setup-by-support-team.md).
 
-You should then:
-
-1) log in as the user "admin" using this temporary password
-2) Change the password to a new complex password (System Settings > Users & Groups > Password reset)
-3) Store the new admin password in your personal vault in 1Password
-
-You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
-
-* Your email address
-* [Your secret key](https://support.1password.com/secret-key/)
-* Your 1Password account password
-
-If you have an existing computer you can access this via the "Set up another device" page.
-
-If this if your first computer we recommend using your Emergency Kit from 1Password.
-
 ## 3) Check for system updates
+
 * In System Settings check for any Mac OS updates and install them.
 * If prompted please skip Apple Intelligence setup, this will need disabling in System settings. You may need to update your Mac OS before this prompt appears
 * Double check that Apple Intelligence is disabled in system settings
@@ -89,7 +73,7 @@ This process also:
 
 ## 5) Setting up essential software
 
-In order to setup software on your Mac you first need email, 1Password and Slack so you can store complex, secure passwords and communicate with the team.
+In order to set up software on your Mac you first need email, 1Password and Slack so you can store complex, secure passwords and communicate with the team.
 
 ### Email
 
@@ -172,7 +156,27 @@ Once you have email access you should receive an invite to Slack. Existing staff
 
 You can read about [getting started with Slack](https://slack.com/intl/en-gb/help/articles/218080037-Getting-started-for-new-Slack-users).
 
-## 6) Setting up other software 
+## 6) Default admin user
+
+To meet our security requirements your normal user does not have admin rights. To perform any admin tasks (e.g. install software) you need to use the admin user.
+
+You should:
+
+1) log in as the user "admin" using this temporary password
+2) Change the password to a new complex password (System Settings > Users & Groups > Password reset)
+3) Store the new admin password in your personal vault in 1Password
+
+You'll need to [login to 1Password via a web browser](https://studio24.1password.com/) to store the new admin password. To do this you'll need:
+
+* Your email address
+* [Your secret key](https://support.1password.com/secret-key/)
+* Your 1Password account password
+
+If you have an existing computer you can access this via the "Set up another device" page.
+
+If this if your first computer we recommend using your Emergency Kit from 1Password.
+
+## 7) Setting up other software 
 
 Other software you'll need to create accounts for include the following. Invitations to create accounts for software and web-based tools will be sent to your email account. 
 
@@ -181,6 +185,7 @@ Other software you'll need to create accounts for include the following. Invitat
 * Google Drive - open up the app and sign in
 * [VPN - SonicWall Mobile Connect](vpn.md) (set this up when you are working at home)
 * [Telephone system - 3CX](telephone.md)
+* [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software) - some clients use Teams for video calls
 
 ### Finder
 
@@ -208,7 +213,7 @@ Once ESET is installed:
     * Go to System Settings > Privacy & Security > Full Disk Access
     * Tick full disk access for ESET Endpoint Security & ESET real-time file system protection
 
-#### Set up firewall
+#### Firewall
 
 To set up the ESET firewall you need to log out of your normal user account and login via the admin account set up on your Mac.
 You should have your admin password noted in 1Password.
@@ -243,7 +248,7 @@ Tools for PM team and developers:
 * [JIRA](https://studio24.atlassian.net/jira/projects) (task management)
 * [Zendesk](https://studio24.zendesk.com/agent/dashboard) (support system - we recommend using Chrome for Zendesk due to compatibility issues in Firefox)
 
-## 7) Further setup
+## 8) Further setup
 
 Different team members have further setup instructions:
 
