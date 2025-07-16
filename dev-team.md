@@ -24,25 +24,29 @@ brew doctor
 
 If there are any recommendations, it's worth following them.
 
-Update to latest version
+You can update packages in Homebrew at any time via:
 
 ```bash
-brew update
 brew upgrade
-brew cleanup
 ```  
 
-## PHP
+Homebrew will automatically do this when you install new packages that require updates.
 
-_Note to Alan - do we need to install PHP? I don't believe it comes as standard. If so here's some sample instructions that need testing on a fresh machine..._
+## PHP
 
 Install the latest stable version of PHP:
 
 ```shell
 brew install php
 brew install composer
+```
+
+Symfony installer:
+
+```shell
 brew install symfony-cli/tap/symfony-cli
 ```
+
 Laravel installer:
 
 ```shell
@@ -88,6 +92,16 @@ This installs the following CLI commands:
 * `goaccess` - tool to analyse access logs. View the [website](https://goaccess.io/) for usage instructions
 * `op` - to use 1Password via the cli (for SSH etc)
 
+## PhpStorm
+
+> [!NOTE]  
+> The support team will set you up with a JetBrains account based on your studio24.net email address.
+
+1. Open PhpStorm
+2. Activate license
+3. Log in to JetBrains account (this opens a web browser)
+4. Go back to PhpStorm and activate your license
+
 ## iTerm 
 
 iTerm is a better terminal for the Mac.
@@ -95,25 +109,21 @@ iTerm is a better terminal for the Mac.
 ```
 brew install --cask iterm2
 ```
-## Git
 
-Set default branch to main:
+## SSH
 
-```bash
-git config --global init.defaultBranch main
-```
+SSH is used to connect to remote servers, deploy code, and push code to GitHub.
 
-User setup: 
+Whenever you need to connect to a remote server please make sure you are on the [VPN](vpn.md).
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email you@example.com
-git config --global pull.ff only
-```
+### SSH key
+You should create a new SSH password when you use a new Mac, to help enforce good security.
 
-Create a secure SSH key with a password. Store your SSH key password in your personal private vault in 1Password.
+Create a secure SSH key with a password. Store your SSH key password in your Employee private vault in 1Password.
 
 See instructions on [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+
+### GitHub
 
 * Copy keys to [GitHub](https://github.com/settings/keys)
 * Set the key title to your computer name (so you remember where this came from)
@@ -137,18 +147,60 @@ Host github.com
  Port 443
 ```
 
-### Default merge strategy
+### SSH keys for deployment
 
-The default merge strategy is fast-forward, if this doesn't work you can create a merge commit:
+Add your SSH key to [Studio 24 dev SSH keys repo](https://github.com/studio24/ssh-keys) by following the instructions under "Adding your public key" in the README.
+
+This will give you permission to connect to remote servers. Please note these SSH keys are updated every half an hour on servers.
+
+### SSH aliases
+
+We use a shared [ssh-config](https://github.com/studio24/ssh-config) file to help accessing remote servers.
+
+Install this via:
 
 ```
-git pull --no-ff
+git clone git@github.com:studio24/ssh-config.git ~/.ssh/ssh-config
 ```
 
-Or rebase your changes
+Create a `~/.ssh/config` file and add the following to it:
 
 ```
-git pull --rebase
+Host *
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+
+Include ssh-config/*.conf
+```
+
+If your SSH private key is not called `id_ed25519`, use the correct name instead.
+
+You can test this by outputting all host shortcuts:
+
+```
+~/.ssh/ssh-config/bin/show_hosts
+```
+
+You can update your SSH aliases via:
+
+```
+git -C ~/.ssh/ssh-config pull
+```
+
+## Git
+
+Set default branch to main:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+User setup: 
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email you@example.com
+git config --global pull.ff only
 ```
 
 ### Studio 24 team
@@ -233,9 +285,10 @@ You then need to select a Powerline font in iTerm (Preferences > Profile > Text)
 
 When you setup PHPStorm install the following plugins (Settings > Plugins):
 
-* .env files support
-* Laravel Idea (we have commercial license for this)
-* Symfony Support
+* Laravel Idea (we have commercial licenses for the Dev Team)
+* Symfony Plugin
+
+Restart PHPStorm to activate plugins.
 
 Login to your JetBrains account to activate commercial plugins.
 
@@ -262,43 +315,6 @@ If you have a license (front-end team):
 brew install --cask sketch
 ```
 
-## SSH
-
-Whenever you need to connect to a remote server please make sure you are on the [VPN](vpn.md).
-
-### SSH keys for deployment
-Developers need to add your SSH key to [Studio 24 dev SSH keys repo](https://github.com/studio24/ssh-keys). This will give you permission to deploy websites. Please note these SSH keys are updated every half an hour on servers.
-
-**Important note:** always use SSH (secure shell) when cloning a git repo, not HTTPS.
-
-### SSH aliases
-
-We use a shared [ssh-config](https://github.com/studio24/ssh-config) file to help accessing remote servers.
-
-Install this via:
-
-```
-git clone git@github.com:studio24/ssh-config.git ~/.ssh/ssh-config
-```
-
-Create a `~/.ssh/config` file and add the following to it:
-
-```
-Host *
-	UseKeychain yes
-	IdentityFile ~/.ssh/id_rsa
-
-Include ssh-config/*.conf
-```
-
-If your ssh key is not called `id_rsa`, use the correct name instead.
-
-You can test this by outputting all host shortcuts:
-
-```
-~/.ssh/ssh-config/bin/show_hosts
-```
-
 ## Local development environment
 
 To install a local development environment, see the [Local development environment](local-development.md) document.
@@ -306,4 +322,3 @@ To install a local development environment, see the [Local development environme
 ## Configure 1Password for SSH access
 
 To setup and use 1Password for SSH access to servers, see the [1Password for SSH](1password-ssh.md) document.
-3

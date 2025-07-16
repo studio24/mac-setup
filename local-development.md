@@ -18,7 +18,7 @@ with GitHub. As an example, to clone this repo you'd use:
 git clone git@github.com:studio24/mac-setup.git
 ```
 
-## DEV
+## DDEV
 
 [DDEV](https://ddev.readthedocs.io/en/stable/) is a simple development environment which uses Docker to manage local 
 development environments. It's mostly fully automated and allows us to configure software versions (e.g. PHP, MySQL) 
@@ -32,7 +32,7 @@ _Please note if you have Docker Desktop already installed we recommend uninstall
 
 Installation instructions:
 
-* Login to the [OrbStack website](https://orbstack.dev/) using your GitHub account
+* Login to the [OrbStack website](https://orbstack.dev/) in your default web browser using your GitHub account
 * Install the app via `brew install orbstack`
 * Open OrbStack to configure it
     * Select Docker to use Docker containers
