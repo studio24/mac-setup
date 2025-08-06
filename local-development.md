@@ -3,6 +3,11 @@
 > [!NOTE]  
 > Please note we no longer use MAMP for local development and have moved to DDEV.
 
+- [Terminal](#terminal)
+- [Local SSL](#local-ssl)
+- [DDEV](#ddev)
+- [Using DDEV](https://github.com/studio24/dev-playbook/blob/main/ddev/using-ddev.md) (dev playbook) 
+
 ## Terminal
 
 Create Sites folder:
@@ -42,7 +47,8 @@ and store these in version control, so everyone uses the same version.
 
 OrbStack is a fast and simple alternative to Docker Desktop. We have team licenses.
 
-_Please note if you have Docker Desktop already installed we recommend uninstalling this first._
+> [!NOTE]  
+> Please note if you have Docker Desktop already installed we recommend uninstalling this first.
 
 Installation instructions:
 
@@ -57,8 +63,8 @@ Installation instructions:
 
 OrbStack should prompt when it needs updating (you'll need your Mac admin password to update software).
 
-_Note: to add a member to the Studio 24 Orbstack account admin users can go to the [dashboard](https://orbstack.dev/dashboard), 
-select Studio 24 organisation > Settings > Members > Invite a member._
+> [!NOTE]  
+> To add a member to the Studio 24 Orbstack account admin users can go to the [dashboard](https://orbstack.dev/dashboard), select Studio 24 organisation > Settings > Members > Invite a member.
 
 ### Installing DDEV
 
@@ -76,116 +82,6 @@ The first time you use DDEV it will ask:
 
 Answer no.
 
-## Upgrading DDEV
-
-```shell
-brew upgrade ddev/ddev/ddev
-```
-
 ## Using DDEV
 
-To start DDEV run:
-
-```shell
-ddev start
-```
-
-To view the website in your default browser:
-
-```shell
-ddev launch
-```
-
-To list all current projects:
-
-```shell
-ddev list
-```
-
-To restart DDEV (for example if config has changed) run:
-
-```shell
-ddev restart
-```
-
-To stop DDEV run
-
-```shell
-ddev stop
-```
-
-You can also shut down all DDEV projects via:
-
-```shell
-ddev poweroff
-```
-
-### Mailpit
-
-By default all emails sent from your website are captured in a tool called Mailpit, which allows you to review emails sent by the website.
-
-To open Mailpit run:
-
-```shell
-ddev mailpit
-```
-
-### Using a database
-
-To access the database via TablePlus:
-
-```shell
-ddev tableplus
-```
-
-Import a database via an SQL file:
-
-```shell
-ddev import-db < [filename]
-```
-
-Export SQL files for a database:
-
-```shell
-ddev export-db
-```
-
-### Xdebug
-
-Xdebug comes with it by default. To enable Xdebug run:
-
-```shell
-ddev xdebug on
-```
-
-To disable Xdebug:
-
-```shell
-ddev xdebug off
-```
-
-To toggle Xdebug on and off:
-
-```shell
-ddev xdebug toggle
-```
-
-Read instructions on [how to setup Xdebug in PHPstorm and VSCode](https://ddev.readthedocs.io/en/stable/users/debugging-profiling/step-debugging/).
-
-### Running commands in DDEV
-All commands must be run via ddev to ensure you are using the correct version of PHP. For example:
-
-```shell
-ddev composer install
-```
-
-Some [useful commands](https://ddev.readthedocs.io/en/stable/users/usage/cli/#lots-of-other-commands) from the DDEV docs:
-
-* `ddev composer` gives access to Composer
-* `ddev artisan` (Laravel only) gives direct access to the Laravel artisan CLI
-* `ddev console` (Symfony only) gives access to the Symfony console CLI
-* `ddev craft` (Craft CMS only) gives access to the Craft CLI
-* `ddev npm` gives direct access to the npm CLI
-* `ddev wp` (WordPress) give direct access to the WP CLI
-* `ddev ssh` takes you into the web container
-* `ddev exec [command]` executes a command inside the web container
+See [Using DDEV in the Dev Playbook](https://github.com/studio24/dev-playbook/blob/main/ddev/using-ddev.md).

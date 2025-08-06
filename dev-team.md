@@ -2,6 +2,19 @@
 
 Standard Mac setup for developers at Studio 24.
 
+- [Command Line Tools](#command-line-tools)
+- [Homebrew](#homebrew)
+- [PHP](#php)
+- [Software packages](#software-packages)
+- [PhpStorm](#phpstorm)
+- [iTerm](#iterm)
+- [SSH](#ssh)
+- [Git](#git)
+- [Oh My Zsh](#oh-my-zsh)
+- [Optional software](#optional-software)
+- [Local development environment](local-development.md)
+- [Configure 1Password for SSH access](1password-ssh.md)
+
 ## Command Line Tools
 
 You may need to re-install these when upgrading to a new OS version (you need to run this after upgrading to macOS Ventura). Toggle privileges (so you have admin rights) and run the following in terminal:
@@ -102,7 +115,14 @@ This installs the following CLI commands:
 3. Log in to JetBrains account (this opens a web browser)
 4. Go back to PhpStorm and activate your license
 
-## iTerm 
+When you set up PHPStorm you can install the following plugins (Settings > Plugins):
+
+* Laravel Idea 
+* Symfony Plugin
+
+Restart PHPStorm to activate plugins.
+
+## iTerm
 
 iTerm is a better terminal for the Mac.
 
@@ -280,17 +300,6 @@ ZSH_THEME="agnoster"
 ```
 
 You then need to select a Powerline font in iTerm (Preferences > Profile > Text). `Noto Mono for Powerline` is recommended.
-
-## PHPStorm
-
-When you setup PHPStorm install the following plugins (Settings > Plugins):
-
-* Laravel Idea (we have commercial licenses for the Dev Team)
-* Symfony Plugin
-
-Restart PHPStorm to activate plugins.
-
-Login to your JetBrains account to activate commercial plugins.
 
 ## Optional software
 
