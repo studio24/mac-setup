@@ -2,22 +2,22 @@
 
 The following is our standard Mac setup for all staff. The support team are on hand to help you, to get in touch with them either use Slack or call them on 44 (0)1223 328017.
 
-- [Management tools](#management-tools
+- [Management tools](#management-tools)
 - [Mac boxes](#mac-boxes)
-- 1) [Initial boot](#1-initial-boot)
-- 2) [Support team setup](#2-support-team-setup)
-- 3) [Check for system updates](#3-check-for-system-updates)
-- 4) [Automatically downloading software](#4-automatically-downloading-software)
-- 5) [Setting up essential software](#5-setting-up-essential-software)
+- [1 - Initial boot](#1-initial-boot)
+- [2 - Support team setup](#2-support-team-setup)
+- [3 - Check for system updates](#3-check-for-system-updates)
+- [4 - Automatically downloading software](#4-automatically-downloading-software)
+- [5 - Setting up essential software](#5-setting-up-essential-software)
   - [Email](#email)
   - [1Password](#1password)
   - [Slack](#slack)
-- 6) [Mac user passwords](#6-mac-user-passwords)
-- 7) [Setting up other software](#7-setting-up-other-software)
+- [6 - Mac user passwords](#6-mac-user-passwords)
+- [7 - Setting up other software](#7-setting-up-other-software)
   - [Finder](#finder)
   - [ESET endpoint security](#eset-endpoint-security)
   - [Web-based tools](#web-based-tools)
-- 8) [Further setup](#8-further-setup)
+- [8 - Further setup](#8-further-setup)
 
 ## Management tools
 
