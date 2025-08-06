@@ -18,6 +18,20 @@ with GitHub. As an example, to clone this repo you'd use:
 git clone git@github.com:studio24/mac-setup.git
 ```
 
+## Local SSL
+
+You may need to install [mkcert](https://github.com/FiloSottile/mkcert) to ensure local SSLs work reliably in Firefox.
+
+```shell
+# You'll need to enter your Mac user and password to confirm this 
+brew install mkcert nss
+
+# You'll need to enter your admin user and password to confirm this
+mkcert -install
+```
+
+Restart Firefox once this is done to support local SSLs.
+
 ## DDEV
 
 [DDEV](https://ddev.readthedocs.io/en/stable/) is a simple development environment which uses Docker to manage local 
