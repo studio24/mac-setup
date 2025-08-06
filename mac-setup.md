@@ -2,6 +2,23 @@
 
 The following is our standard Mac setup for all staff. The support team are on hand to help you, to get in touch with them either use Slack or call them on 44 (0)1223 328017.
 
+- [Management tools](#management-tools)
+- [Mac boxes](#mac-boxes)
+- [1) Initial boot](#1-initial-boot)
+- [2) Support team setup](#2-support-team-setup)
+- [3) Check for system updates](#3-check-for-system-updates)
+- [4) Automatically downloading software](#4-automatically-downloading-software)
+- [5) Setting up essential software](#5-setting-up-essential-software)
+  - [Email](#email)
+  - [1Password](#1password)
+  - [Slack](#slack)
+- [6) Mac user passwords](#6-mac-user-passwords)
+- [7) Setting up other software](#7-setting-up-other-software)
+  - [Finder](#finder)
+  - [ESET endpoint security](#eset-endpoint-security)
+  - [Web-based tools](#web-based-tools)
+- [8) Further setup](#8-further-setup)
+
 ## Management tools
 
 This process uses the following platforms to manage automated deployment:
@@ -13,7 +30,7 @@ This process uses the following platforms to manage automated deployment:
 
 All Mac systems purchased via the Apple Business account are automatically added to this process. Other MacOS and iOS systems can be added via serial or order number via the Apple Business Manager. Systems that are auto enrolled to this service will automatically download the agent and deploy according to the policy attached to them. Systems purchased from elsewhere will not be automatically enrolled.
 
-### Mac boxes
+## Mac boxes
 
 Please keep the Mac box (including the packing box) and store this in the Cambridge office. 
 
@@ -177,7 +194,7 @@ It's important to reset your admin password and store this in 1Password.
 
 You should also reset your password for your normal Mac user. Follow the same steps as above but for your normal Mac user.
 
-## 7) Setting up other software 
+## 7) Setting up other software
 
 Other software you'll need to create accounts for include the following. Invitations to create accounts for software and web-based tools will be sent to your email account. 
 
@@ -227,7 +244,7 @@ Once logged in as an admin user:
 * Log out as admin user
 * Log back in as your normal user
 
-### Access to web-based tools
+### Web-based tools
 
 Web-based tools you'll need to create accounts for are:
 
