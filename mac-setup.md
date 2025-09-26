@@ -12,6 +12,7 @@ The following is our standard Mac setup for all staff. The support team are on h
   - [Email](#email)
   - [1Password](#1password)
   - [Slack](#slack)
+  - [Proton account setup](#proton-account-setup)
 - [6) Mac user passwords](#6-mac-user-passwords)
 - [7) Setting up other software](#7-setting-up-other-software)
   - [Finder](#finder)
@@ -79,7 +80,7 @@ All of the major software is installed (and updated) automatically by Addigy in 
 * Integrity (link checker)
 * Mozilla Firefox (web browser)
 * Slack (team chat)
-* SonicWall Mobile Connect (VPN)
+* ProtonVPN (VPN)
 * Tick (time tracking)
 
 This process also:
@@ -175,6 +176,17 @@ You should store passwords in 1Password and not your web browser for security. D
 Once you have email access you should receive an invite to Slack. Existing staff should have set up Slack already (see above).
 
 You can read about [getting started with Slack](https://slack.com/intl/en-gb/help/articles/218080037-Getting-started-for-new-Slack-users).
+
+### Proton account setup 
+You will receive an email invitation to join Studio 24 within Proton.
+
+In the email invitation select “Join organization”
+
+This will prompt you to create a password for access, please save this in your Employee vault in 1Password as it is an emergency/recovery password if SSO (Single sign-on) fails.
+
+Once the invitation has been accepted, please notify an admin user as they will need to enable SSO for your account, this will allow the ability to login via your Google credentials. 
+
+Once this has been enabled you may be prompted to contact your administrator for access but this doesn’t matter as we will now login via the VPN App. 
 
 ## 6) Mac user passwords
 
