@@ -43,14 +43,12 @@ You can now close the preferences window.
 7. Upon first run you will be prompted that “ProtonVPN would like to Add VPN Configurations”, select Allow
 
 ## Usage
-1. Open the app, this can be found via Alfred by searching for `sonicwall`
-2. Click `Connect`
+1. Open the app, this can be found via Alfred by searching for `prtotonvpn`
+   or
+2. In the application bar
+3. Select quick connect (this should now be configured for to connect t the correct server) or select the `OFFICE-VPN` connection and `connect`
 
-You can keep Sonicwall Mobile Connect in your dock if you want to make this easy to find.
 
-* Open the app, this can be found via Alfred by searching for `sonicwall`
-* Right click the app
-* Options -> Keep in dock
 
 
 
