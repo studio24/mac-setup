@@ -16,8 +16,10 @@ This is installed by default to all devices via Addigy as part of the initial Ma
    1. You will be prompted for your Proton login credentials (via Google).
 
 3. If prompted to use a new network extension select “Open System Settings”, this should open the correct window, if not open `System Settings -> General -> Login items and extensions` then go to `Extensions -> Network extensions`
-   1. Toggle ProtonVPN to “On” and select Done 
-   2. On the welcome screen select “Continue”
+   1. Toggle ProtonVPN to “On” 
+   2. Authenticate with your admin user account
+   3. Select "Done"
+   3. On the welcome screen select “Continue”
 4. Once Proton VPN is open select `Profiles -> Create profile`
    1. Select a name for the profile eg “Work” 
    2. Select Feature - Standard 
@@ -26,10 +28,10 @@ This is installed by default to all devices via Addigy as part of the initial Ma
    5. Select VPN Protocol - Smart 
    6. Save
 5. Select Proton VPN -> Settings 
-   1. On the General tab toggle on 
-   2. Start on boot 
-   3. Start minimized 
-   4. System notifications
+   On the General tab toggle on 
+   1. Start on boot 
+   2. Start minimized 
+   3. System notifications
 
 6. On the Connection tab 
    1. Select Auto connect - Disabled 
