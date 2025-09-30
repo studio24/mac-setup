@@ -1,4 +1,4 @@
-# Setting up Proton VPN
+# Accessing VPN
 
 We use Proton VPN for dedicated IP connectivity software to a secure network. This is essential for deployments 
 and access to some IP protected websites (e.g. staging sites). This requires the Support team creating your user on the 

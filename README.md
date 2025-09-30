@@ -19,6 +19,7 @@ Standard Mac setup for the team at Studio 24.
 
 * [Dev Team setup](dev-team.md)
 * [Local development environment](local-development.md)
+* [Accessing OpenVPN](openvpn.md)
  
 ### For the support team
 

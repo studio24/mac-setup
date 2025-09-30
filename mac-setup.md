@@ -213,7 +213,7 @@ Other software you'll need to create accounts for include the following. Invitat
 * [Apple ID](apple-id.md) - if you have a new Apple ID you'll need to have email setup first
 * Alfred - if you want to use this open the app to configure it
 * Google Drive - open up the app and sign in
-* [VPN - SonicWall Mobile Connect](vpn.md) (set this up when you are working at home)
+* [VPN - Proton VPN](vpn.md)
 * [Telephone system - 3CX](telephone.md)
 * [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software) - some clients use Teams for video calls
 

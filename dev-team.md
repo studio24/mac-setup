@@ -10,6 +10,7 @@ Standard Mac setup for developers at Studio 24.
 - [iTerm](#iterm)
 - [SSH](#ssh)
 - [Git](#git)
+- [OpenVPN](#openvpn)
 - [Oh My Zsh](#oh-my-zsh)
 - [Optional software](#optional-software)
 - [Local development environment](local-development.md)
@@ -134,7 +135,7 @@ brew install --cask iterm2
 
 SSH is used to connect to remote servers, deploy code, and push code to GitHub.
 
-Whenever you need to connect to a remote server please make sure you are on the [VPN](vpn.md).
+Whenever you need to connect to a remote server please make sure you are on the either the Proton [VPN](vpn.md) or the backup [OpenVPN/Tunnelblick](openvpn.md)
 
 ### SSH key
 You should create a new SSH password when you use a new Mac, to help enforce good security.
@@ -243,6 +244,11 @@ And tell Git to use it via:
 ```
 git config --global core.excludesfile ~/.gitignore
 ```
+
+## OpenVPN
+All staff have access to the Studio 24 Proton VPN service for connecting to networks when not working from home or the office. The development team have access to a second VPN service for use to connect to servers and deploy.
+This service is hosted and managed by Mythic Beasts using OpenVPN and requires the use of [Tunnelblick](https://tunnelblick.net/).
+Please setup following this guide: [openvpn](openvpn.md)
 
 ## Oh My Zsh
 
