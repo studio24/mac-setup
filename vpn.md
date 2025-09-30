@@ -1,17 +1,23 @@
-# Accessing VPN
+# VPN
 
-We use Proton VPN for dedicated IP connectivity software to a secure network. This is essential for deployments 
-and access to some IP protected websites (e.g. staging sites). This requires the Support team creating your user on the 
-Proton business account.
+We use Proton VPN for secure connections to the Internet. This is essential if you are not working at home or in the office on a trusted network. We also use the VPN for deploying all code updates to websites.
+
+The Dev Team have a [backup VPN service](backup-vpn.md) they can use for deployments if Proton VPN fails for any reason.
 
 > [!IMPORTANT]  
 > You must connect to the VPN when you are not in the office or on your home network. 
 
+## Usage
+1. Open the app, this can be found via Alfred by searching for `prtotonvpn`
+   or
+2. In the application bar
+3. Select quick connect (this should now be configured for to connect t the correct server) or select the `OFFICE-VPN` connection and `connect`
+
 ## Installation
 This is installed by default to all devices via Addigy as part of the initial Mac setup. 
 
-## Setup
-1. Open the app, this can be found via Alfred by searching for `ProtonVPN`
+## Setting u Proton VPN
+1. Open the app, this can be found via Alfred by searching for `VPN`
 2. Select Signin with SSO 
    1. You will be prompted for your Proton login credentials (via Google).
 
@@ -43,12 +49,6 @@ This is installed by default to all devices via Addigy as part of the initial Ma
 You can now close the preferences window.
 
 7. Upon first run you will be prompted that “ProtonVPN would like to Add VPN Configurations”, select Allow
-
-## Usage
-1. Open the app, this can be found via Alfred by searching for `prtotonvpn`
-   or
-2. In the application bar
-3. Select quick connect (this should now be configured for to connect t the correct server) or select the `OFFICE-VPN` connection and `connect`
 
 
 

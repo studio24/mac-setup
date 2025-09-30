@@ -186,7 +186,9 @@ This will prompt you to create a password for access, please save this in your E
 
 Once the invitation has been accepted, please notify an admin user as they will need to enable SSO for your account, this will allow the ability to login via your Google credentials. 
 
-Once this has been enabled you may be prompted to contact your administrator for access but this doesn’t matter as we will now login via the VPN App. 
+You can now sign out and close the browser window for the Proton account.
+
+Setup instructions for the VPN are in the [VPN setup guide](vpn.md).
 
 ## 6) Mac user passwords
 
