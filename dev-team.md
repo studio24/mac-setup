@@ -10,7 +10,7 @@ Standard Mac setup for developers at Studio 24.
 - [iTerm](#iterm)
 - [SSH](#ssh)
 - [Git](#git)
-- [Backup VPN servive](#backup-vpn-service)
+- [Backup VPN service](#backup-vpn-service)
 - [Oh My Zsh](#oh-my-zsh)
 - [Optional software](#optional-software)
 - [Local development environment](local-development.md)

@@ -8,9 +8,8 @@ The Dev Team have a [backup VPN service](backup-vpn.md) they can use for deploym
 > You must connect to the VPN when you are not in the office or on your home network. 
 
 ## Usage
-1. Open the app, this can be found via Alfred by searching for `prtotonvpn`
-   or
-2. In the application bar
+1. Open the app, this can be found via Alfred by searching for `vpn`
+2. Or in the application bar
 3. Select quick connect (this should now be configured for to connect t the correct server) or select the `OFFICE-VPN` connection and `connect`
 
 ## Installation
