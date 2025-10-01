@@ -12,6 +12,7 @@ The following is our standard Mac setup for all staff. The support team are on h
   - [Email](#email)
   - [1Password](#1password)
   - [Slack](#slack)
+  - [Proton account setup](#proton-account-setup)
 - [6) Mac user passwords](#6-mac-user-passwords)
 - [7) Setting up other software](#7-setting-up-other-software)
   - [Finder](#finder)
@@ -79,7 +80,7 @@ All of the major software is installed (and updated) automatically by Addigy in 
 * Integrity (link checker)
 * Mozilla Firefox (web browser)
 * Slack (team chat)
-* SonicWall Mobile Connect (VPN)
+* ProtonVPN (VPN)
 * Tick (time tracking)
 
 This process also:
@@ -176,6 +177,19 @@ Once you have email access you should receive an invite to Slack. Existing staff
 
 You can read about [getting started with Slack](https://slack.com/intl/en-gb/help/articles/218080037-Getting-started-for-new-Slack-users).
 
+### Proton account setup 
+You will receive an email invitation to join Studio 24 within Proton.
+
+In the email invitation select “Join organization”
+
+This will prompt you to create a password for access, please save this in your Employee vault in 1Password as it is an emergency/recovery password if SSO (Single sign-on) fails.
+
+Once the invitation has been accepted, please notify an admin user as they will need to enable SSO for your account, this will allow the ability to login via your Google credentials. 
+
+You can now sign out and close the browser window for the Proton account.
+
+Setup instructions for the VPN are in the [VPN setup guide](vpn.md).
+
 ## 6) Mac user passwords
 
 > [!NOTE]  
@@ -201,7 +215,7 @@ Other software you'll need to create accounts for include the following. Invitat
 * [Apple ID](apple-id.md) - if you have a new Apple ID you'll need to have email setup first
 * Alfred - if you want to use this open the app to configure it
 * Google Drive - open up the app and sign in
-* [VPN - SonicWall Mobile Connect](vpn.md) (set this up when you are working at home)
+* [VPN - Proton VPN](vpn.md)
 * [Telephone system - 3CX](telephone.md)
 * [Microsoft Teams](https://www.microsoft.com/en-us/microsoft-teams/group-chat-software) - some clients use Teams for video calls
 
