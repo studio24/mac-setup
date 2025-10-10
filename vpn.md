@@ -30,7 +30,7 @@ This is installed by default to all devices via Addigy as part of the initial Ma
    2. Select Feature - Standard 
    3. Select Country - OFFICE-VPN 
    4. Select server - OFFICE-VPN#1 
-   5. Select VPN Protocol - Smart 
+   5. Select VPN Protocol - Stealth 
    6. Save
 5. Select Proton VPN -> Settings 
    On the General tab toggle on 
