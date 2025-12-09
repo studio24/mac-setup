@@ -182,11 +182,11 @@ You will receive an email invitation to join Studio 24 within Proton.
 
 In the email invitation select “Join organization”
 
-This will prompt you to create a password for access, please save this in your Employee vault in 1Password as it is an emergency/recovery password if SSO (Single sign-on) fails.
-
-Once the invitation has been accepted, please notify an admin user as they will need to enable SSO for your account, this will allow the ability to login via your Google credentials. 
+This will prompt you to create a password for access, please save this in your Employee vault in 1Password.
 
 You can now sign out and close the browser window for the Proton account.
+
+Setup instructions for Proton Mail are in the [Proton mail setup guide](proton-mail.md)
 
 Setup instructions for the VPN are in the [VPN setup guide](vpn.md).
 
