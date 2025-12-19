@@ -22,3 +22,18 @@ To set your
 - Rules to Forward emails
 - Auto-replies for out of office etc
 
+## Importing contacts
+
+You can import contacts from the intranet by following these instructions.
+
+- Go to https://intranet.studio24.net/
+- Go to My Profile
+- Select "Download vcard contacts file"
+- Go to Proton Mail > Contacts
+- Import Contacts > from .csv or vCard
+- Import CSV file you just downloaded
+- Match CSV field "Name" to vCard field "Display name"
+
+See https://proton.me/support/adding-contacts
+
+If you end up with any duplicates you can merge these in Proton Mail, or delete the duplicates.
