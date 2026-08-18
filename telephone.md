@@ -1,14 +1,16 @@
-# Telephone system - 3CX
-All users are expected to be logged into the telephone system while working. Please view the company handbook for all telephone policy details.
+# Telephone system - Linphone
 
-## Installation
-You will receive an invitation via email containing your extenesion details and password.
+Install and configure Linphone
 
-* Visit the URL [3CX login page](https://studio24.3cx.co.uk/webclient)
-* Enter your extension number and password
-* Select the Apple icon on the left menu
-* Under **Desktop App** select Install, this will download the .dmg file
-* Once downloaded open and run the .dmg file
-* Once installed, under **Desktop App** select Provision
-
-Mobile apps for 3CX are also available if you need to use these.
+- Download the app from https://www.linphone.org/en/docs/install-linphone/
+- Once downloaded, double click the file to install.
+- Once installed open Linphone (search for Linphone in Alfred).
+- Check the box to accept the terms of use and privacy policy
+- You will be prompted that this method offers limited functionality, click to proceed. 
+- Select “3rd Party SIP account”
+- Select "I understand"
+- Fill in the details to connect to the system as per the below screenshot
+![Linphone config](images/linphone.png)
+- Both logins are listed in 1Password as:
+- - Alan S24 Telephone ext 1002
+- - Julie S24 Telephone ext 1001
