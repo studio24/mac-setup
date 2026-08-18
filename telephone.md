@@ -10,7 +10,7 @@ Install and configure Linphone
 - Select “3rd Party SIP account”
 - Select "I understand"
 - Fill in the details to connect to the system as per the below screenshot
-
+![Linphone config](images/linphone.png)
 - Both logins are listed in 1Password as:
 - - Alan S24 Telephone ext 1002
 - - Julie S24 Telephone ext 1001
